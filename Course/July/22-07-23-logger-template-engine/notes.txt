@@ -1,3 +1,9 @@
 Logger or logs 
 //It will print the message or information after each api or database is called.
 //package name: winston
+Which places we need to logs the data 
+//Before any database operation 
+//after successfull or failure database operation 
+//any api is entering or failing
+//any third party api call - sms,email,google api.
+=========================================================
