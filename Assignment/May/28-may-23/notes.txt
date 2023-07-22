@@ -1,0 +1,4 @@
+Patch/delete request
+//product.json 
+app.js - business logic 
+index.js - server connection

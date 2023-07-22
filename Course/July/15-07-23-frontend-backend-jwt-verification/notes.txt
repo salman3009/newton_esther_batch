@@ -1,0 +1,6 @@
+Backend:
+To generate token - JWT - JSON Webtoken 
+JWT 
+1.It helps for authentication purpose
+2.we can set limited time period 
+

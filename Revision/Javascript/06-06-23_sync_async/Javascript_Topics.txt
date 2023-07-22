@@ -1,0 +1,34 @@
+1.Types of Writing Javascript 
+2.Variable-Declarat-Datatypes 
+3.Types-of-operator (arithmetic,comparison,logical,ternary,inc/decr)
+4.Decision_Making_statement(if/else,switch)
+5.Array/Object 
+6.String inbuilt methods
+7.Array methods 
+8.Math object/Date Object 
+9.Loops-Array-loops 
+10.DOM 
+11.Basic DOM methods 
+12.Events 
+13.Event Bubbling 
+14.ES6-let/const,arrow function,destructring,class,inheritance,spread,rest,promise,promise.all,promise.settled,promise.any,promise.race
+15.async/await
+16.scoping,execution/context,TDZ,hositing,closure
+20.this keyword 
+21.prototype 
+22.prototype chain 
+23.IIFE,bind,call,apply,currying 
+24.sync and async 
+25.http,fetch,axios 
+26.Javascript architecture
+27.regular expression.
+28.call by value and call by reference 
+29.shallow and deep copy
+
+Important topic - priority:
+1.ES6 - let/const,promise,spread operator,arrow function
+2.fetch 
+3.array methods 
+4.hoisting,closure,event bubbling 
+5.DOM basic
+

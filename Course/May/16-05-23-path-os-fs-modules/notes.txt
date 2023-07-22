@@ -1,0 +1,49 @@
+MERN:
+Everything is developed and understanble by using javascript
+Mongodb - Database - permanent storage.
+Expressjs - framework for nodejs 
+Nodejs - runtime environment to run javascript and it is serverside language
+Reactjs
+///////////////
+To run javascript you need to install nodejs outside the browser 
+cmd:node filename
+=================
+server - something that is running 24*7 to provide service to customer 
+ServerSide language - Nodejs 
+1.it should support file system 
+2.it should interact with database system 
+3.it should support network system 
+4.it should interact with os 
+//internally nodejs is written in C++ thats we can able to achieve above process easily in nodejs 
+============================================
+Nodejs - single thread 
+Java - multi thread 
+thread - process in execution 
+The entire nodejs architecture will work in async nature 
+==============================================
+Inbuilt packages in Nodejs 
+1.os 
+2.fs 
+=========================================
+esmodules 
+import/export - async in nature - (reactjs/angular)- Babel - lower module - es6
+commonjs - default in nodejs 
+require  - sync in nature
+=========================================
+module - collection of files.
+===============================
+Creating our custom modules 
+==============================
+Event Emitter:
+//events helps to trigger some function to do some business logic execution.
+//It consists of two process 
+     1.triggering event - (whenever data is available or data is ready);
+     2.listenining to that event and returning response.
+//all the code is written async in nature.     
+================================================
+
+
+
+
+
+

@@ -1,0 +1,29 @@
+Backend:
+1.Nodejs
+2.Expressjs
+3.MVC 
+4.Database 
+5.Mongodb with Nodejs 
+6.Mongoose with expressjs 
+7.CRUD in mongoose 
+8.comparison and logical operator in mongoose
+9.MERN - frontend + backend 
+=====================================
+Mongoose - aggregation 
+//It help to read the data in optimized manner 
+//It is using the concept of pipeline.
+//Multiple queries we can able to read it one after another.
+//aggregation need to write inside the array bracket
+operation:
+$project -> bringing specific set of data.
+$match-->filter
+$sort - ascending:1,descending:-1
+$group - 
+ _id - it will bring unique data from any of the field
+ $sum - it will sum up the value 
+ $match - it will filter data normal match , comparsion operator ,logical operator
+ $avg - finding average for particular field
+ $push  - will create new array and push the value
+ $dateToString - string format of date
+===========================================
+

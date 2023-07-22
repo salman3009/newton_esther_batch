@@ -1,0 +1,52 @@
+HTTP server?
+server - something that is running 24*7 and providing service to customer or end user
+http - hypertext tranfer protocol
+//hypermedia information communicated using internet
+=======================================
+http method:
+get - fetching information 
+post - posting data 
+
+Each http structure 
+header
+body 
+
+get - header 
+post - header/body 
+====================================
+http status code:
+//Helps to send response to frontend. So frontend can able to understand the message.
+200 or 300 - success 
+400 or 500 - error 
+==============================
+Any http request will have two things 
+1.request  - what frontend is asking?
+2.response - server is responding back 
+===============================
+frontend and backend how they are communicating?
+frontend - html/css/javascript - reactjs/angular/vuejs 
+backend - nodejs/expressjs
+//json - data binding 
+//html
+//css 
+//js 
+//text 
+//csv 
+//image 
+//video 
+======================================
+JSON.parse() - it will convert json to javascript 
+JSON.stringify() -it will convert javascript to json 
+=============================================
+Get method --> it is supported default in all browsers.
+post method --> it can be check using postman if you not integrated the frontend application.
+postman tool - it is use to check api is working or not.
+========================================================
+Post method:
+//Data is coming from frontend 
+//Event emitter for incoming data. listen (on method)
+//For incoming take data in the form of Buffer 
+//Buffer convert into toString() --> unicode character.
+//If object is coming after toString() it will convert into json format to convert into javascript object use JSON.parse().
+==============================================
+

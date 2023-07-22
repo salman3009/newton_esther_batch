@@ -1,0 +1,18 @@
+1.What is express?
+2.How to parse frontend data?
+//We need to use body-parser third party package.
+3.how to send html file from backend.
+//we need to use sendFile() from express to send the html file 
+4.what is serversiderendering
+//each html page will be serve from backend api
+5.How to handle urlencoded data in backend 
+//use body-parser package and add middelware with urlencoded parser 
+6.What is middelware?
+//It act like intermediate between request and response.
+//It will work like tunnel form.
+//It will work sequentially from one middelware to another middelware.
+7.How you will move from one middelware to another middelware?
+//next()
+8.How to write mutiple middelware?
+//we can attach mutiple middleware inside the route path.
+============================================================

@@ -1,0 +1,25 @@
+What is spread operation?
+//It helps to spread array or object into individual variable.
+//It will create deep copy of array and object.
+========================================
+What is authentication process?
+//registration--login--sending back dashboard page 
+=====================================
+what is authorization process?
+//Depends upon the role we are protecting the api and operation will be done upons upon the role.
+=====================================================
+How you will protected the api?
+//we can attached middleware and we can write validatin and verification details inside the middleware.
+=================================================
+How you will do filter operation in backend?
+//We can you url params to get the filter/search input from user.
+//req.params
+================================================
+How to create dynamic api 
+//we can use params to create dynamic api.
+==========================================
+Which api to be return for update
+//we can use put method 
+//user has to share index or unique property in params 
+//update data inside the body.
+===================================

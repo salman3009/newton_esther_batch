@@ -1,0 +1,123 @@
+{
+	"variables": [],
+	"info": {
+		"name": "mvc",
+		"_postman_id": "cdde59d8-7801-dbf1-ebac-2b6f09134ef6",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "register",
+			"request": {
+				"url": "http://localhost:8080/api/user/register",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"ramesh@gmail.com\",\n    \"password\":\"12345\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"url": "http://localhost:8080/api/user/login",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"ramesh@gmail.com\",\n    \"password\":\"12345\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "createProduct",
+			"request": {
+				"url": "http://localhost:8080/api/product/create",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InN1cmVzaEBnbWFpbC5jb20iLCJyb2xlcyI6WyJ1c2VycyJdLCJpYXQiOjE2ODY0NjYxNDEsImV4cCI6MTY4NjQ2OTc0MX0.2BxB0PBhcHOb-q9_NObkpAXRZ9snft2qldmQR8cwj4s",
+						"description": "",
+						"disabled": true
+					},
+					{
+						"key": "token",
+						"value": "xyz123",
+						"description": ""
+					},
+					{
+						"key": "email",
+						"value": "ramesh@gmail.com",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n   \"productName\":\"whirlpool\",\n   \"price\":5000,\n   \"discount\":true,\n   \"discountPrice\":200,\n   \"stock\":40\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "getProduct",
+			"request": {
+				"url": "http://localhost:8080/api/product/list",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InN1cmVzaEBnbWFpbC5jb20iLCJyb2xlcyI6WyJ1c2VycyJdLCJpYXQiOjE2ODY0NjYxNDEsImV4cCI6MTY4NjQ2OTc0MX0.2BxB0PBhcHOb-q9_NObkpAXRZ9snft2qldmQR8cwj4s",
+						"description": "",
+						"disabled": true
+					},
+					{
+						"key": "token",
+						"value": "xyz123",
+						"description": ""
+					},
+					{
+						"key": "email",
+						"value": "suresh@gmail.com",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n   \"productName\":\"LG\",\n   \"price\":4000,\n   \"discount\":true,\n   \"discountPrice\":1000,\n   \"stock\":24\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

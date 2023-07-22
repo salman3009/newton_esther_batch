@@ -1,0 +1,38 @@
+MERN Stack application:
+1.Backend 
+      1.Controller 
+           1.try/catch
+           2async/await 
+      2.Models 
+           1.required
+           2.unique 
+           3.Datatype
+           4.schema
+           5.default
+      3.Middleware
+          1.Token 
+          2.Global object 
+          3.next
+      4.Routes 
+      5.Mongoose
+           1.Connect 
+           2.save 
+           3.find 
+      6.app 
+          1.cors 
+          2.body-parser 
+2.Frontend 
+    1.functional component 
+    2.Routes 
+    3.validation property 
+    4.how to setup form 
+    5.how to bootstrap 4 
+    6.axios - get,post call 
+    7.how to navigate 
+    8.how to handle error 
+    9.sessionStorage 
+    10.interceptor 
+    
+Both frontend and backend authentication and authorization 
+===================================================================
+

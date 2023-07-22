@@ -1,0 +1,152 @@
+{
+	"info": {
+		"_postman_id": "26fbc671-8ad2-42a2-bbe5-2630be9e97c9",
+		"name": "mvc",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "3305659"
+	},
+	"item": [
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"userName\":\"ramesh\",\n    \"email\": \"ramesh@gmail.com\",\n    \"password\":\"12345\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/user/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"user",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"ramesh@gmail.com\",\n    \"password\":\"12345\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/user/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"user",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createProduct",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InN1cmVzaEBnbWFpbC5jb20iLCJyb2xlcyI6WyJ1c2VycyJdLCJpYXQiOjE2ODY0NjYxNDEsImV4cCI6MTY4NjQ2OTc0MX0.2BxB0PBhcHOb-q9_NObkpAXRZ9snft2qldmQR8cwj4s",
+						"disabled": true
+					},
+					{
+						"key": "token",
+						"value": "xyz123"
+					},
+					{
+						"key": "email",
+						"value": "ramesh@gmail.com"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n   \"productName\":\"whirlpool\",\n   \"price\":5000,\n   \"discount\":true,\n   \"discountPrice\":200,\n   \"stock\":40\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/product/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"product",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getProduct",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InN1cmVzaEBnbWFpbC5jb20iLCJyb2xlcyI6WyJ1c2VycyJdLCJpYXQiOjE2ODY0NjYxNDEsImV4cCI6MTY4NjQ2OTc0MX0.2BxB0PBhcHOb-q9_NObkpAXRZ9snft2qldmQR8cwj4s",
+						"disabled": true
+					},
+					{
+						"key": "token",
+						"value": "xyz123"
+					},
+					{
+						"key": "email",
+						"value": "suresh@gmail.com"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/api/product/list",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"product",
+						"list"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

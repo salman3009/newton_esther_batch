@@ -1,0 +1,169 @@
+[{
+  "_id": {
+    "$oid": "649dad99bb70aa39684b0cdb"
+  },
+  "firstName": "surya",
+  "age": 34,
+  "status": false,
+  "hobbies": [
+    "music",
+    "cricket"
+  ],
+  "salary": 25000,
+  "active": true,
+  "date": {
+    "$date": {
+      "$numberLong": "1688055193016"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "649dadb731c62d823ec7c1d9"
+  },
+  "firstName": "akash",
+  "age": 29,
+  "status": false,
+  "hobbies": [
+    "music",
+    "volleyball"
+  ],
+  "salary": 35000,
+  "active": true,
+  "date": {
+    "$date": {
+      "$numberLong": "1688055223677"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "649dadc7d70e3923b94ee6cb"
+  },
+  "firstName": "ramesh",
+  "age": 34,
+  "status": true,
+  "hobbies": [
+    "music"
+  ],
+  "salary": 45000,
+  "active": true,
+  "date": {
+    "$date": {
+      "$numberLong": "1688055239858"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "649dadd643eeae63060db364"
+  },
+  "firstName": "amol",
+  "age": 20,
+  "status": false,
+  "hobbies": [
+    "music"
+  ],
+  "salary": 50000,
+  "active": true,
+  "date": {
+    "$date": {
+      "$numberLong": "1688055254212"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "649dadf2e0d3e39d1706d922"
+  },
+  "firstName": "prashant",
+  "age": 39,
+  "status": true,
+  "hobbies": [
+    "music",
+    "cricket",
+    "swimming"
+  ],
+  "salary": 45000,
+  "active": true,
+  "date": {
+    "$date": {
+      "$numberLong": "1688055282812"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "649dae09bc8f702be094fd8e"
+  },
+  "firstName": "sathish",
+  "age": 29,
+  "status": false,
+  "hobbies": [
+    "music",
+    "cricket"
+  ],
+  "salary": 40000,
+  "active": true,
+  "date": {
+    "$date": {
+      "$numberLong": "1688055305416"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "649dae1e68a7d00cea54af78"
+  },
+  "firstName": "atul",
+  "age": 31,
+  "status": true,
+  "hobbies": [
+    "music",
+    "cricket"
+  ],
+  "salary": 42000,
+  "active": true,
+  "date": {
+    "$date": {
+      "$numberLong": "1688055326420"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "649dae36b249c949089427ee"
+  },
+  "firstName": "kamlesh",
+  "age": 34,
+  "status": false,
+  "hobbies": [
+    "cricket"
+  ],
+  "salary": 35000,
+  "active": true,
+  "date": {
+    "$date": {
+      "$numberLong": "1688055350094"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "649dae4543aeb8a039672ad5"
+  },
+  "firstName": "ganesh",
+  "age": 22,
+  "status": true,
+  "hobbies": [
+    "swimming"
+  ],
+  "salary": 18000,
+  "active": true,
+  "date": {
+    "$date": {
+      "$numberLong": "1688055365009"
+    }
+  },
+  "__v": 0
+}]

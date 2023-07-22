@@ -1,0 +1,11 @@
+<script>
+    function display(){
+        let firstName = "akash";
+          function inner(){
+               return firstName;
+          }
+          return inner;
+    }
+    let result = display();
+    console.log(result());
+</script>

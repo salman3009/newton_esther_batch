@@ -1,0 +1,32 @@
+<script>
+    //promise is a custom async code 
+    //It consists of mainly two stage 
+    //success 
+    //failure 
+
+
+    const addition = (a,b) => {
+        return new Promise((success, failure) => {
+            //success,failure is normal argument
+            setTimeout(()=>{
+                if(a+b>0){
+                    success(a+b);
+                    //object/array/string/function
+                }
+                else{
+                    failure("the value is less");
+                }
+               
+            },1000)   
+        })
+}
+
+     
+  addition(3,-4).then((input)=>{
+     console.log(input);
+  },(error)=>{
+     console.log("error",error);
+  })
+   
+
+</script>

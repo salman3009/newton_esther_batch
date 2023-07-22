@@ -1,0 +1,77 @@
+[
+    {
+        "username": "johndoe",
+        "email": "johndoe@gmail.com",
+        "password": "password123"
+    },
+    {
+        "username": "janedoe",
+        "email": "janedoe@hotmail.com",
+        "password": "secret321"
+    },
+    {
+        "username": "samsmith",
+        "email": "samsmith@yahoo.com",
+        "password": "qwerty456"
+    },
+    {
+        "username": "emilyjones",
+        "email": "emilyjones@gmail.com",
+        "password": "mypassword"
+    },
+    {
+        "username": "davidsmith",
+        "email": "davidsmith@hotmail.com",
+        "password": "letmein789"
+    },
+    {
+        "username": "sarahwilliams",
+        "email": "sarahwilliams@yahoo.com",
+        "password": "password1234"
+    },
+    {
+        "username": "chrisbrown",
+        "email": "chrisbrown@gmail.com",
+        "password": "secret123"
+    },
+    {
+        "username": "jenniferlee",
+        "email": "jenniferlee@hotmail.com",
+        "password": "mypassword123"
+    },
+    {
+        "username": "michaeljones",
+        "email": "michaeljones@yahoo.com",
+        "password": "password456"
+    },
+    {
+        "username": "laurasmith",
+        "email": "laurasmith@gmail.com",
+        "password": "qwerty789"
+    },
+    {
+        "username": "alexriley",
+        "email": "alexriley@hotmail.com",
+        "password": "password567"
+    },
+    {
+        "username": "samanthawilson",
+        "email": "samanthawilson@yahoo.com",
+        "password": "secret567"
+    },
+    {
+        "username": "kevinjohnson",
+        "email": "kevinjohnson@gmail.com",
+        "password": "mypassword456"
+    },
+    {
+        "username": "amandajackson",
+        "email": "amandajackson@hotmail.com",
+        "password": "letmein123"
+    },
+    {
+        "username": "danielthomas",
+        "email": "danielthomas@yahoo.com",
+        "password": "password789"
+    }
+]

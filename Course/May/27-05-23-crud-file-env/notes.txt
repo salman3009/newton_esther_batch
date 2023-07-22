@@ -1,0 +1,33 @@
+//How to store constant inside the env file.
+//How to create,update,delete and read from file json data.
+//we can store key and value pair inside the .env file 
+example:
+//sample name
+PORT=3000
+DELL = WERFE@#$%$#^$#%^$#^$%
+MONGODB=http://localhost:3000/port
+====================================================
+//Reading json data from file and converting to javascript object 
+//it is permanent storage.
+const list = JSON.parse(fs.readFileSync(`${__dirname}/data/tour.json`));
+=====================================================================
+To parse the data inside the express application
+//we can use app.use(express.json());
+//we can use body-parser package
+========================================
+JSON.parse() --> converting json to object 
+JSON.string()--->converting object to json
+==========================================
+Delete method:
+//Anything property that is coming in url will be always in the string datatype.
+//findIndex() will return -1 if data is not found 
+//For each api you can send only one reponse 
+//splice method will change original array 
+//splice method second parameter always give 1 as value 
+=====================================================
+update method:
+//we need to two things frontend 
+     1.filter data - params 
+     2.update data  - body
+======================================
+

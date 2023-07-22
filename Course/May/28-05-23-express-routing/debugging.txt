@@ -1,0 +1,17 @@
+1.
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Error</title>
+    </head>
+    <body>
+        <pre>Cannot POST /api/user/login</pre>
+    </body>
+</html>
+
+//please check the routing path 
+//proper slash should be present before start the route 
+app.use('/api/user',userRoute);
+router.post('/login',userController.loginController);
+=============================================================

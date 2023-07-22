@@ -1,0 +1,17 @@
+Database:
+1.It is an information store permanently inside the hard disk.
+2.It play very important role for entire application information 
+3.Backend will fetch the data from databse after authentication and authorization process.
+4.We have two approach to access database 
+      1.SQL - structure query language ( relations) - Oracle,mssqlserver
+      2.NoSQL - No structure query language( no relations) - mongodb,couchdb 
+ACID
+Atomicity - each transaction insid the table should complete entire process otherwise data should be rollback
+Consistency  - all table will have sync data.
+Isolation-multiple transactions will happen concurrently but separately.
+Durability - Even in the case of hardware or software is failed still data will be available
+CAP
+Consistency
+availability 
+partition tolerance - If you do veritcal scaling then dividing the data equally to each machine easily taken care by mongodb.
+

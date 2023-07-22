@@ -1,0 +1,26 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <form onsubmit="onSubmitHandler(event)">
+            Enter your name:<input type="text" id="fullName" size="20"/>
+            <input type="submit"/>
+        </form>
+        <script>
+            function onSubmitHandler(event){
+                event.preventDefault();
+                let fullName = document.forms[0].fullName.value;
+                //'',null,0,NaN,undefined
+                if(!fullName){
+                  alert("please enter the fullName")
+                }
+                else{
+                   location.href="./success.html";
+                }
+                
+               
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,24 @@
+How to debug nodejs?
+-->package name ndb 
+How to setup ndb?
+step1:
+  cmd:npm install -g ndb
+  cmd:npm install ndb
+step2:
+  cmd: npm install -g nodemon
+step3: 
+package.json
+  "start":"ndb nodemon app.js"
+step4: 
+ cmd: npm start 
+ =====================================
+ Basic error handling 
+ 1.always write any api function inside the try/catch block 
+ 2.We can use new Error and throw the error so catch block will catch it 
+ Middleware Error Handling 
+ 1.we can use express middleware to handle the errors occurred on api.
+ 2.we can able to add multiple error handling middleware.
+ Mongoose Error handling 
+ 1.Validation Error 
+ 2.Duplicate Error 
+ ================================================

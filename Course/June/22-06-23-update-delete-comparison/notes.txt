@@ -1,0 +1,63 @@
+Operation CRUD:
+1.save()
+2.find()
+3.findOneAndUpdate()
+4.deleteOne()
+
+How to count the total number of documents:
+count()
+How we can do pagination:
+skip()
+limit()
+=====================================================
+List of Comparison Operator:
+1.$eq - equality operator - [string]
+2.$ne - not equality operator - [string]
+3.$gt - greater than - [number]
+4.$gte - greater than equal to  -  [number]
+5.$lt - less than -  [number]
+6.$lte  - less than equal to -  [number]
+7.$in - [array]
+8.$nin - not in - [array]
+========================================
+List of Logical operator:
+1.$and - everything should match
+2.$nor - opposite of and 
+3.$or - any one match 
+====================================
+regular expression:
+1.i - case insensitive 
+2.^ - start symbol 
+3.$ - end symbol 
+4.$elemMatch 
+===================================
+sathis 
+SATHIS 
+raj sathis 
+sathis kumar 
+
+1.let result = await Customer.find({fullName:{$regex:/sathis/i}});
+sathis 
+SATHIS 
+raj sathis 
+sathis kumar
+
+2.let result = await Customer.find({fullName:{$regex:/^sathis/i}});
+sathis 
+SATHIS 
+sathis kumar
+
+3.let result = await Customer.find({fullName:{$regex:/sathis$/i}});
+sathis 
+SATHIS 
+raj sathis 
+
+4.let result = await Customer.find({fullName:{$regex:/^sathis$/i}});
+sathis 
+SATHIS 
+
+==================================================================
+Dynamic regular expression:
+let search = 'sathis'; //frontend data
+let regex = new RegExp(`^${search}$`,"i");
+==============================================================

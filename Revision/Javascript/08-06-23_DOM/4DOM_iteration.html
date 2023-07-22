@@ -1,0 +1,21 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <div id="country">
+
+        </div>
+    </body>
+    <script>
+
+      let list=['India','USA','China','Russia','Australia','UK'];
+      let parent = document.getElementById('country');
+      for(let obj of list){
+       let child = document.createElement('h1');
+       child.textContent = obj;
+       parent.appendChild(child);
+      }
+
+    </script>
+</html>

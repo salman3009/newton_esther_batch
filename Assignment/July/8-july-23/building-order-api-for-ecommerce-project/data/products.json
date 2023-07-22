@@ -1,0 +1,122 @@
+[
+    {
+        "name": "Apple iPhone 13",
+        "description": "6.1 inch 5G phone with A15 Bionic chip",
+        "price": "799",
+        "category": "Smartphone"
+    },
+    {
+        "name": "Samsung Galaxy S21",
+        "description": "6.2 inch 5G phone with Exynos 2100 chip",
+        "price": "799",
+        "category": "Smartphone"
+    },
+    {
+        "name": "Google Pixel 6",
+        "description": "6.4 inch 5G phone with Google Tensor chip",
+        "price": "899",
+        "category": "Smartphone"
+    },
+    {
+        "name": "OnePlus 9 Pro",
+        "description": "6.7 inch 5G phone with Snapdragon 888 chip",
+        "price": "969",
+        "category": "Smartphone"
+    },
+    {
+        "name": "Dell XPS 13",
+        "description": "13.4 inch laptop with Intel Core i7 processor and 16GB RAM",
+        "price": "1499",
+        "category": "Laptop"
+    },
+    {
+        "name": "Apple MacBook Air",
+        "description": "13.3 inch laptop with M1 chip and 8-core GPU",
+        "price": "999",
+        "category": "Laptop"
+    },
+    {
+        "name": "HP Spectre x360",
+        "description": "15.6 inch laptop with Intel Core i7 processor and NVIDIA GeForce GTX 1650 Ti graphics",
+        "price": "1599",
+        "category": "Laptop"
+    },
+    {
+        "name": "Asus ROG Zephyrus G14",
+        "description": "14 inch gaming laptop with AMD Ryzen 9 processor and NVIDIA GeForce RTX 3060 graphics",
+        "price": "1499",
+        "category": "Laptop"
+    },
+    {
+        "name": "Sony WH-1000XM4",
+        "description": "Wireless noise cancelling headphones with up to 30 hours battery life",
+        "price": "349",
+        "category": "Headphones"
+    },
+    {
+        "name": "Bose QuietComfort Earbuds",
+        "description": "True wireless noise cancelling earbuds with up to 6 hours battery life",
+        "price": "279",
+        "category": "Headphones"
+    },
+    {
+        "name": "Jabra Elite 85t",
+        "description": "True wireless earbuds with advanced noise cancelling and 12mm speakers",
+        "price": "229",
+        "category": "Headphones"
+    },
+    {
+        "name": "Apple iPad Air",
+        "description": "10.9 inch tablet with A14 Bionic chip and Touch ID",
+        "price": "599",
+        "category": "Tablet"
+    },
+    {
+        "name": "Samsung Galaxy Tab S7+",
+        "description": "12.4 inch tablet with Snapdragon 865+ processor and S Pen",
+        "price": "849",
+        "category": "Tablet"
+    },
+    {
+        "name": "Apple iPhone SE",
+        "description": "4.7 inch phone with A13 Bionic chip and 12MP camera",
+        "price": "399",
+        "category": "Smartphone"
+      },
+      {
+        "name": "OnePlus Nord 2",
+        "description": "6.43 inch 5G phone with MediaTek Dimensity 1200-AI chip and 50MP camera",
+        "price": "399",
+        "category": "Smartphone"
+      },
+      {
+        "name": "Google Pixelbook Go",
+        "description": "13.3 inch laptop with 8th Gen Intel Core processor and up to 12 hours battery life",
+        "price": "649",
+        "category": "Laptop"
+      },
+      {
+        "name": "Microsoft Surface Laptop 4",
+        "description": "13.5 inch laptop with 11th Gen Intel Core processor and up to 19 hours battery life",
+        "price": "999",
+        "category": "Laptop"
+      },
+      {
+        "name": "Bose SoundLink Revolve+",
+        "description": "Portable Bluetooth speaker with 360-degree sound and up to 16 hours battery life",
+        "price": "299",
+        "category": "Speakers"
+      },
+      {
+        "name": "Sonos Beam",
+        "description": "Smart soundbar with Amazon Alexa and Google Assistant support",
+        "price": "399",
+        "category": "Speakers"
+      },
+      {
+        "name": "Samsung Galaxy Watch 4",
+        "description": "Smartwatch with Samsung Exynos W920 chip and up to 40 hours battery life",
+        "price": "249",
+        "category": "Smartwatch"
+      }
+]

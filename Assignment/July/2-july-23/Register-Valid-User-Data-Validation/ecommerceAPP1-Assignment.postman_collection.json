@@ -1,0 +1,135 @@
+{
+	"variables": [],
+	"info": {
+		"name": "ecommerceAPP1-Assignment",
+		"_postman_id": "e4dd1e27-d00d-5868-d585-36e9282f7aa0",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3000/api/v1/products - Post",
+			"request": {
+				"url": "http://localhost:3000/api/v1/products",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Apple iPhone 13\",\n        \"description\": \"6.1 inch 5G phone with A15 Bionic chip\",\n        \"price\": \"799\",\n        \"category\": \"Smartphone\",\n        \"role\":\"admin\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/api/v1/products/64a11036d8052428730219a8 - GETByID",
+			"request": {
+				"url": "http://localhost:3000/api/v1/products/64a11036d8052428730219a8",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/api/v1/products/64a11036d8052428730219a8 - Delete",
+			"request": {
+				"url": "http://localhost:3000/api/v1/products/64a11036d8052428730219a8",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"role\":\"admin\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/api/v1/products - Patch",
+			"request": {
+				"url": "http://localhost:3000/api/v1/products/64a1159505d4892ac003991e",
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"updatedData\": {\n\t\t\"name\": \"Apple iPhone 13\",\n        \"description\": \"6.1 inch 5G phone with A15 Bionic chip\",\n        \"price\": \"999\",\n        \"category\": \"Smartphone\",\n        \"role\":\"admin\"\t\n\t},\n\t\"role\":\"admin\"\n\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/api/v1/products - search products",
+			"request": {
+				"url": "http://localhost:3000/api/v1/products",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "asyncvalidation",
+			"request": {
+				"url": {
+					"raw": "http://localhost:3000/?name=akash&email=akash1@gmail.com&pswd=33434",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						""
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "akash",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "email",
+							"value": "akash1@gmail.com",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "pswd",
+							"value": "33434",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

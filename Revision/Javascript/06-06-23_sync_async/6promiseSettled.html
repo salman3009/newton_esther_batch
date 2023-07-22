@@ -1,0 +1,39 @@
+<script>
+
+    //inside the promise.allsettled will return all the result success/failure
+
+    let first_promise= new Promise((success,reject)=>{
+        setTimeout(()=>{
+            success("first promise is completed");
+        },3000)
+    })
+
+    let second_promise= new Promise((success,reject)=>{
+        setTimeout(()=>{
+            success("second promise is completed");
+        },1000)
+    })
+
+    let reject_promise= new Promise((success,reject)=>{
+        setTimeout(()=>{
+            reject("reject promise is completed");
+        },3000)
+    })
+
+    let result = Promise.allSettled([first_promise,second_promise,reject_promise]);
+
+    result.then((input)=>{
+      console.log(input);
+      for(let obj of input){
+        if(obj.status === "fulfilled"){
+            console.log(obj);
+        }
+      }
+    },(reject)=>{
+        console.log("reject",reject)
+    })
+
+
+
+
+</script>

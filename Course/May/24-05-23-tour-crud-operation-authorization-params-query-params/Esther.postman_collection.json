@@ -1,0 +1,42 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Esther",
+		"_postman_id": "a77f419e-7219-26a6-ffdb-152d99608e1c",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3000/tourupdate/0",
+			"request": {
+				"url": "http://localhost:3000/tourupdate/0",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"source\":\"pune\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/tourread/list",
+			"request": {
+				"url": "http://localhost:3000/tourread/list",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

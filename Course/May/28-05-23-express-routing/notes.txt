@@ -1,0 +1,40 @@
+Routing in the backend:
+//It helps to navigate to different controller depends upon url string 
+//we can create multiple routes in backend
+//It helps to decouple the entire backend application
+=============================================
+app.js -> starting file 
+routes ->multiple js file will be created for combinations routes 
+controller ->business logic 
+
+user routes 
+//login 
+//register 
+
+product routes 
+//create 
+//update 
+//read 
+//delete
+
+=======================================
+//always create equal number of routes and controller.
+================================================
+adding file path 
+siblings - ./ 
+child from parent to child from another - ../
+============================================
+path to react loginController
+app.js -->api/user 
+routes -->login 
+http://localhost:3000/api/user/login
+==============================================
+to access html file in backend directly 
+express.static()
+http://localhost:3000/product.html
+http://localhost:3000/index.html
+=============================================
+Models
+//Data will be present here 
+//This data will be access by controller 
+=============================

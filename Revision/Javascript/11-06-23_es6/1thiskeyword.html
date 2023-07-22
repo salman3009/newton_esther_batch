@@ -1,0 +1,47 @@
+<!-- <script>
+  'use strict'
+  const display={
+    firstName:"akash",
+    calculateAge:function(){
+        console.log(this);
+    },
+    greet:()=>{
+        console.log(this);
+    }
+  }
+  display.calculateAge();
+  display.greet();
+
+</script> -->
+
+<!-- <script>
+    'use strict'
+    const display={
+        firstName: "akash",
+        calculateAge:function(){
+            console.log(this);
+            let self = this;
+            const isCheck = function(){
+                console.log(this);
+                 console.log(self.firstName);
+            }
+            isCheck();
+        }
+    }
+    display.calculateAge();
+</script> -->
+
+<script>
+    'use strict'
+    const display={
+        firstName: "akash",
+        calculateAge:function(){
+            console.log(this);
+            const isCheck = ()=>{
+                console.log(this.firstName);
+            }
+            isCheck();
+        }
+    }
+    display.calculateAge();
+</script>

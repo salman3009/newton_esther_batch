@@ -1,0 +1,23 @@
+Authentication:
+ 1. User Registration  
+            - username 
+            - email 
+            - password - bcrypt(encrypt)
+ 2. Login 
+           - email 
+           - password - bcrypt(decrpyt)
+           - JWT - JSON WEBTOKEN - xyz34343&asdf234abnMBcnbkljsahdluih
+           - JWT token will added send it to backend for further api fetch
+//Frontend and backend both are separate application 
+=======================================================
+lodash
+//some inbuilt function 
+  1.array function 
+        - .first()
+        - .nth()
+        - .chunk
+        - .filter()
+  2.object 
+         - .keys()
+         -.values()
+ ==============================              

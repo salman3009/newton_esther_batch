@@ -1,0 +1,36 @@
+Mongodb Atlas setup:
+//Storing data in cloud database
+Setup:
+1.Login 
+2.create cluster 
+3.network access - entry 0.0.0./0
+4.database access - username/password 
+5.database --> connect -->vscode - url copy 
+6.past it and <password> with your password 
+7.run the application 
+8.database -->browse collection-->database-->collections 
+===================================================
+Nodejs --- Mongodb 
+//There is no datatype restriction 
+//There is no restriction to remove property or to add the property
+//There is no restriction to follow similar pattern 
+//Mongodb is easy to use 
+//Easy to deploy 
+//Easy to learn 
+//cost cutting 
+//performance is also good 
+//Driver is supported in latest technology in nodejs 
+=====================================================
+ODM - Object Data modelling 
+Nodejs--->expressjs--->Mongoos(ODM)-->Mongodb 
+Mongoose
+//Provide proper datatype then only it will insert inside the database 
+//Provide property name 
+//Provide similar pattern of data 
+//Schema creation is done 
+//validation we can able to do (required,min,max,pattern,email)
+==================================================================
+All mongoose operation will return promise we need to then() and catch()
+any collection created from mongoose default it will add s in the end of the string 
+example:customer--->customers 
+====================================================

@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <title>Number Generator</title>
+        <style>
+
+            .container{
+                display:grid;
+                grid-template-columns: 100px 100px 100px 100px 100px 100px;
+                column-gap: 1px;
+                row-gap: 1px;
+                margin:auto;
+                width: 45%;
+            }
+
+            .box{
+                padding-top:10px;
+                padding-bottom:10px;
+                color:white;
+                text-align: center;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class="container" id="list">
+
+        </div>
+        <script>
+            let parent = document.getElementById('list');
+
+            for(let i=1;i<=200;i++){
+             let child = document.createElement('div');
+             child.textContent = i;
+             child.classList.add('box');
+             let result = isNumberCheck(i);
+             if(result == 'prime'){
+                child.style.backgroundColor = 'red'
+             }
+             else if(result == 'even'){
+                child.style.backgroundColor = 'green';
+             }
+             else{
+                child.style.backgroundColor = 'yellow';
+             }
+             parent.appendChild(child);
+            }
+
+            function isNumberCheck(input){
+                 let flag = false;
+
+                for(let i=2;i<input;i++){
+                    if(input%i == 0){
+                        flag = true;
+                        break;
+                    }
+                }
+
+                if(!flag && input >=2){
+                     return 'prime';
+                }
+                else if(input%2 == 0){
+                    return 'even';
+                }
+                else{
+                    return 'odd';
+                }
+
+            }
+        </script>
+    </body>
+  
+    
+</html>

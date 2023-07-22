@@ -1,0 +1,34 @@
+<script>
+
+    //inside the promise.all if one is reject we are not going get the positive result
+
+    let first_promise= new Promise((success,reject)=>{
+        setTimeout(()=>{
+            success("first promise is completed");
+        },3000)
+    })
+
+    let second_promise= new Promise((success,reject)=>{
+        setTimeout(()=>{
+            success("second promise is completed");
+        },1000)
+    })
+
+    let reject_promise= new Promise((success,reject)=>{
+        setTimeout(()=>{
+            reject("reject promise is completed");
+        },3000)
+    })
+
+    let result = Promise.all([first_promise,second_promise,reject_promise]);
+
+    result.then((input)=>{
+      console.log(input);
+    },(reject)=>{
+        console.log("reject",reject)
+    })
+
+
+
+
+</script>

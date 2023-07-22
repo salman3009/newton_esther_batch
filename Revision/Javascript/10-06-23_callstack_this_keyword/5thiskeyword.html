@@ -1,0 +1,22 @@
+<script>
+    'use strict'
+    console.log(this);
+
+    const display={
+        age:33,
+        firstName:function(){
+            console.log(this)
+        }
+    }
+    display.firstName();
+
+    function addition(){
+        console.log(this);
+    }
+    addition();
+
+    const subtraction=()=>{
+        console.log(this);
+    }
+    subtraction();
+</script>

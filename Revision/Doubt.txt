@@ -1,0 +1,12 @@
+Javascript Doubt topic:
+1.Dom manipulation with functions
+2. ES6 modules
+3.sync and async , workflow 
+4.Currying
+5.promise and IIFE
+6.ajax
+7.prototype 
+8.event loop 
+9.why not work this keyword in arrow method
+10.Generator function
+11.HOC

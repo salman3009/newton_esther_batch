@@ -1,0 +1,72 @@
+How to install the database in our system.
+==========================================
+Inside the C location create one folder called data inside that db folder 
+==============================================
+Mongodb Compass - GUI 
+=============================
+Default database:
+admin
+config 
+=============================
+mongos - cli - (command line interface)
+GUI - mongodbcompass,nosqlbooster,robot
+====================================
+Database - collections 
+collections - documents
+==============================
+example:
+Database : HDFC Bank 
+Collections: 
+1.customer 
+2.employee 
+3.insurance 
+Documents of customer 
+{
+    id:1,
+    name:"akash",
+    address:"Delhi",
+    status:true
+},{
+    id:2,
+    name:"suresh",
+    address:"Mumbai",
+    status:false
+}
+Datatype:
+string
+number 
+boolean 
+array 
+object 
+date 
+null
+=======================================================
+databaseName: banking 
+collectionName:customer
+{
+    fullName:'akash',
+    age:23,
+    status:23,
+    hobbies:['cricket','music'],
+    address:{
+        primary:'Bangalore',
+        second:'Delhi'
+    }
+}
+
+primarykey:
+1.It is unique key created for all the documents 
+2.It is created by database default 
+3._id will be created 
+==============================================
+Inside the MongodbCompass 
+1.How to create databse 
+2.How to create collection 
+3.How to insert the data 
+4.How to edit the data 
+5.How to delete the data 
+6.HOw to read the data 
+==========================================
+Frontend ---- backend --Nodejs----Mongodb 
+Nodejs-mongodb 
+=======================================

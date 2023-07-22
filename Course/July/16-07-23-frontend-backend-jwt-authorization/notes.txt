@@ -1,0 +1,52 @@
+Backend 
+1.Registration flow 
+        bcrypt - password
+2.login flow 
+        jwt - token 
+3.transaction (CRD) - flow 
+        middleware - to verify the token 
+
+frontend 
+    1. registration or login flow 
+            - axios 
+            - state 
+            - session storage to store token - login flow 
+     2. dashboard 
+            app.js - axios.interceptor - header - token 
+            axios 
+            state 
+            useEffect - protect route 
+ =====================================================
+ Backend 
+ 1.schema   
+       login-register-flow - user 
+ 2.controller 
+        registration
+ 3.routes 
+        registration 
+ 4.app.js 
+        db connection 
+        routes 
+        cors 
+        body-parser     
+ ===============================================
+ frontend 
+   1app.js 
+       - routes setup
+   component 
+        - check jsx
+ ===============================================
+ authentication
+
+user is valid to use our application or not
+
+authorization
+
+user is valid but which data he can able to access
+========================================                        
+
+
+
+
+
+

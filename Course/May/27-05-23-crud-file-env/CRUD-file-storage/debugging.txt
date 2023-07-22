@@ -1,0 +1,11 @@
+Error:
+Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at new NodeError (node:internal/errors:387:5)
+    at ServerResponse.setHeader (node:_http_outgoing:603:11)
+    at ServerResponse.header (/Users/salmanahmedg/Documents/Tuto/newtownJuneBatch/nodejs-esther/Course/May/27-05-23-crud-file-env/CRUD-file-storage/node_modules/express/lib/response.js:794:10)
+    at ServerResponse.send (/Users/salmanahmedg/Documents/Tuto/newtownJuneBatch/nodejs-esther/Course/May/27-05-23-crud-file-env/CRUD-file-storage/node_modules/express/lib/response.js:174:12)
+    at /Users/salmanahmedg/Documents/Tuto/newtownJuneBatch/nodejs-esther/Course/May/27-05-23-crud-file-env/CRUD-file-storage/app.js:40:21
+
+
+//you are sending response two times.
+==========================================================================

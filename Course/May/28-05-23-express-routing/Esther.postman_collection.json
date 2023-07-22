@@ -1,0 +1,165 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Esther",
+		"_postman_id": "8d1b6f1d-d965-866a-2e1c-7d8c77a4f208",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3000/tourupdate/0",
+			"request": {
+				"url": "http://localhost:3000/tourupdate/0",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"source\":\"pune\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/tourread/list",
+			"request": {
+				"url": "http://localhost:3000/tourread/list",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "post-file",
+			"request": {
+				"url": "http://localhost:3000",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"source\":\"hyderabad\",\n\t\"destination\":\"bhopal\",\n\t\"payment\":4000\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get-file",
+			"request": {
+				"url": "http://localhost:3000",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"salary\":10\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "delete - file",
+			"request": {
+				"url": "http://localhost:3000/1",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"source\":\"pune\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "put - file",
+			"request": {
+				"url": "http://localhost:3000/2",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"payment\":1000\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "login-mvc",
+			"request": {
+				"url": "http://localhost:3000/api/user/login",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"payment\":1000\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "register-mvc",
+			"request": {
+				"url": "http://localhost:3000/api/user/register",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"payment\":1000\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

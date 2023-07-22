@@ -1,0 +1,17 @@
+Implement:
+1. access control middleware for user route.
+   //req.body.role 
+//get,post,delete
+
+
+1.middleware file 
+2.roles[]
+3.req.body 
+4. no role - 403 - 'Access denied'
+5.400 - 'Unable to check access level'
+=============================================
+req.params
+http://localhost:3000/1
+req.query
+http://localhost:3000?name="akash"&price=3000
+==============================================

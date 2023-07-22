@@ -1,0 +1,12 @@
+How you will implement routing in backend?
+//express router can be used to implement router in backend 
+What is controller?
+//the business logic is written inside the controller.
+How to access static files from backend 
+//express.static we can use to server the html file 
+How to render html file from api?
+//res.sendFile()
+What is MVC patten 
+M - model  - Data or schema or pattern will be present
+v - view  - html
+C - controller  - business logic

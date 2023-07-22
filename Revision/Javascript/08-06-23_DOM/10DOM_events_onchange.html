@@ -1,0 +1,19 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+      
+            Enter your name:<input type="text" id="fullName" size="20" onchange="onChangeHandler()"/>
+          
+ 
+        <script>
+            function onChangeHandler(){
+                //console.log(event.target.value);
+                let x = document.getElementById('fullName');
+                x.value = x.value.toUpperCase();
+               
+            }
+        </script>
+    </body>
+</html>

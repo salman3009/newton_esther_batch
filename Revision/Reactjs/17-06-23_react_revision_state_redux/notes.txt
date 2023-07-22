@@ -1,0 +1,86 @@
+What is state?
+//some set of data 
+//If you want render latest UI we need to update in state.
+Example:
+function Details(){
+    return (<div>
+      <h1></h1>
+    <div>)
+}
+Types of component 
+1.class component 
+2.functional component - latest
+
+useState,UseReducer,useContext - hooks
+1.useState
+2.UseReducer
+3.useContext 
+4.Redux
+===========================================
+creating new project:
+below to create react project 
+npx create-react-app sample-state
+
+below to create nextjs project
+npx create-react-app@latest sample-state
+Points:
+serverside rendering
+backend api
+dynamic routing directly
+css setup
+image optimization
+typescript support
+==========================================
+start point - index.js 
+first component - app
+{} - javascript expression 
+=================================
+useState
+//async way
+//If there is change in this state ui will get render again 
+//It consists of two parameter one is current state and another one is updated state.
+==========================================================
+useReducer 
+//async way 
+//If there is change in this state ui will get render again 
+//It consists of two parameter one is current state and another one is updated state.
+//YOu will have multiple actions to update the state.
+=====================================================
+Props--> property -- Passing data from one component to another component 
+=================================================
+App.js -- Display---Sub---Mini 
+===============================================
+UseContext 
+//To avoid chaining of props 
+//We can pass the state data to any of the component in component tree.
+//provider and consumer 
+//to improve the performance.
+=============================
+export const FullName = "suresh" 
+import {fullname} from './file';
+
+export default function App(){
+
+}
+import App from './file';
+
+Single file 
+//you can have multiple export statement 
+//but only one default is allowed
+====================================
+angular - two way binding 
+reactjs - one way binding 
+===================================
+Redux implementation:
+//state management 
+//centralized state 
+Flux architecture 
+//one way binding -- unidirectional flow 
+1.view  - UI component
+2.Action - methods to update state 
+3.Dispatcher - calling method and passing state value 
+4.store  - data 
+==============================================
+redux toolkit 
+https://redux-toolkit.js.org/tutorials/quick-start
+==================================================

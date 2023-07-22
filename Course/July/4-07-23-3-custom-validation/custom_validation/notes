@@ -1,0 +1,11 @@
+InBuilt validation:
+1.required 
+2.minlength
+3.maxlength
+4.min 
+5.max 
+6.enum 
+7.custom validator
+         1.sync validator
+         2.async validator
+================================

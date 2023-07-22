@@ -1,0 +1,42 @@
+Today session:
+1.register api 
+2.login api 
+3.tour create api 
+4.tour get api 
+5.tour update api 
+6.tour delete api
+
+Basic Express setup:
+1.what is express 
+2.Create one folder 
+3.Inside the folder we need one file app.js 
+4.Inside the folder we need to run cmd: npm init 
+5.package.json file will be created.
+6.npm i express 
+7.npm i body-parser 
+8.express creating the server
+9.we need to create api 
+10.get api call 
+11.nodemon package.
+====================================
+Creating html file from backend.
+1.creat index.html file in backend 
+2.setup bootstrap 4 and forms
+3.inside the form name property is mandatory.
+===========================================
+Sending form data to express application:
+1.urlencoded
+2.req.body 
+========================================
+Error Handling in express 
+====================================
+Storing global variable inside the express 
+example
+let user={}
+===================================
+Attaching explicit middleware inside login api 
+======================================
+how to write mutiple middelware inside the login api
+==============================================
+
+

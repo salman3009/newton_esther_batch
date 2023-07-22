@@ -1,0 +1,4 @@
+How to write a file using MVC pattern. 
+How to use middleware and passing data through it. 
+Understanding the assignment structure from the given mvc pattern.
+

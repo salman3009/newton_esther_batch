@@ -1,0 +1,21 @@
+//We are creating four api 
+1.create operation and storing along with user details 
+2.read operation with filtering the data.
+   //if the role is user he can see only his data.
+   //if the role is admin he can able to see all the data.
+===========================================================
+register--login-->saving credentials -->authentication process
+tourapi-creation --> middleware(roles/verification) - authorization process
+===================================================================
+Read operation
+1.bringing all data 
+2.bringing data with matching exact source only - params
+==================================================
+User Data from frontend:
+1.Form html -- ureencoded form 
+2.Json data - json format
+==============================================
+GET: no body is present 
+POST/PUT: we have body 
+GET/POST/PUT: params is possible in all methods
+=================================================

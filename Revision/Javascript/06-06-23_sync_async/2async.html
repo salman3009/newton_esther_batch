@@ -1,0 +1,29 @@
+<script>
+    //async inbuild methods - settimeout,setinterval,fetch,axios
+    //custom async methods - callback,promise
+    //handling multiple async methods - chaining-callback,chaining-promise ,async/await
+    //sync code - stack  - first-in-last-out
+    //async code - queue  - first-in-first-out
+    console.log("line 3");
+
+    function displaySalary(input){
+      console.log("line 8");
+         setTimeout(()=>{
+            console.log("line 9",input);
+         },0)
+      console.log("line 12");
+    }
+
+    const displayName=(name)=>{
+        console.log("line 16")
+         setTimeout(()=>{
+        console.log("line 18",name);
+         },0)
+         console.log("line 19")
+    }
+
+    console.log("line 15");
+
+    displaySalary(2000);
+    displayName("suresh");
+</script>

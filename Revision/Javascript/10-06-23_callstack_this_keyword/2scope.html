@@ -1,0 +1,36 @@
+<script>
+    //global scope
+    const fullName = "suresh";
+
+    const first=()=>{
+        //function scope
+        let a = 5;
+        let b = second();
+        let result = a+b;
+        if(result>5){
+            //block scope
+            let d = 5;
+        }
+
+    }
+
+    const second=()=>{
+        //function scope
+        let c = 8;
+        return c;
+    }
+
+    first();
+    //Global execution 
+      //fullName 
+    //First()
+        //all variable given in global execution we can access it here 
+        //a 
+        //b 
+        //result
+        //d
+    //second() 
+         //all variable given in global execution we can access it here 
+         //c
+
+</script>

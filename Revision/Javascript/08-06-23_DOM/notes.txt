@@ -1,0 +1,43 @@
+DOM - Document Object Model 
+//It is created behind the scence 
+//Mainly to interact with javascript 
+//Default document(window) object is attached
+    example: alert 
+             getElementById()
+=================================================
+DOM
+Accessing the element 
+1.document.getElementById()
+2.document.getElementByClassName()
+3.document.getElementByTagName() 
+
+Creating the element/tag
+1.document.createElement()
+
+Append the element/tag 
+2.document.appendChild 
+
+Adding dynamically css class and style 
+document.style.color 
+document.classList.add()
+=====================================================
+Events:
+//Events play important role for user interface action. 
+//Whenever event is applied a function is called from javascript.
+//To identify between normal functiona and event function please add handler name in the end of event function.
+//List of events example 
+          1.onclick 
+          2.onsubmit 
+          3.onchange 
+          4.onkeyup 
+          5.onselect 
+          6.onfocus 
+          7.onmouseup/onmousedown
+//every event will have the event object 
+//event object -->event.target.name,event.target.id,event.target.value 
+//Inside the Form if you submit to avoid navigating to next page we need to use preventDefault() method 
+======================================================================================
+CSS:
+flex - 1 dimension layout - row wise or column wise 
+grid - multi dimension layout - row+column
+============================================================

@@ -1,0 +1,30 @@
+1.How you will store in environment file?
+//create .env file 
+//use the third party package called dotenv 
+2.What you will store inside the env file?
+//constants and general properties like port,mongodb url,jwt secret keyword we can store inside the env file.
+3.How will you read a data from file 
+//we can inbuilt packgage 'fs' or 'fs/promises' to read file from local system.
+fs/promises - will work in async way 
+fs - will work both in sync and async 
+4.What is template string
+//It is advance syntax in es6 to do manipulation with javascript express and constant string
+5.How to parse the json data in backend 
+//express.json() we can use to parse the json data
+6.what is the method name to delete the data from original array 
+//splce
+7.How to find index inside the array any inbuilt method 
+//findIndex()
+8.Difference between findIndex and find method 
+//findIndex will return index value of the particular data 
+//find will return entire object once match is found 
+9.Which api to return to delete data
+delete api 
+10.which api to use to update the data 
+put api 
+ //put api will help to whole particular set of property inside the data
+patch api
+//put api will help to update particular set of property inside the data
+11.difference between dynamic api and static api 
+static api - serving html files 
+dynami api - send data depens upon params or query 

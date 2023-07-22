@@ -1,0 +1,72 @@
+{
+	"info": {
+		"_postman_id": "297bd018-dc2b-40d6-96ca-53aacde1a91f",
+		"name": "esterh_assgment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "3305659"
+	},
+	"item": [
+		{
+			"name": "product_purchased",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n \"userId\":\"64a8f2c0e0c888264a0d6349\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/users/products-purchased",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"users",
+						"products-purchased"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/api/v1/users/add-product",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"userId\":\"64a8f2c0e0c888264a0d6349\",\n    \"productId\":\"64a8f2c0e0c888264a0d6358\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/users/add-product",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"users",
+						"add-product"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

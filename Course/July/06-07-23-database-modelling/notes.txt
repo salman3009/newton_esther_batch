@@ -1,0 +1,5 @@
+Database Modelling:
+1.one-one-relationship - {}
+2.one-many-relationship - []
+3.one-many-reference-relationship  - Two separate documents
+4.reference-population-child-parent 

@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>Country List</title>
+        <style>
+         .container{
+            display:grid;
+            grid-template-columns: auto auto auto auto auto auto;
+            column-gap: 10px;
+            row-gap:10px;
+         }
+         .box{
+            text-align: center;
+            padding-top:40px;
+            padding-bottom:40px;
+            border:1px solid grey;
+            box-shadow: 1px 1px 1px 1px grey;
+            border-radius:3px;
+         }
+        </style>
+    </head>
+    <body>
+        <div class="container" id="listDetails">
+
+        </div>
+        <script>
+            let country = ['USA','India','France','Germany','China','Austria','Norway','Russia','Sri Lanka','Iran','Columbia','Japan','North Korea','South Korea','Lebanon'];
+            let parent = document.getElementById('listDetails');
+            for(let obj of country){
+                let child = document.createElement('h2');
+                child.textContent = obj;
+                child.classList.add('box');
+                parent.appendChild(child)
+            }
+        </script>
+    </body>
+</html>
