@@ -13,6 +13,8 @@ Template Engine:
 //Inside the html to bind dynamic data from api template engine will help 
 types of template 
 1.hbs 
+    //To bind dynamic data  - {{}}
+    //res.render()
 2.pug 
 3.express
 =============================================================
