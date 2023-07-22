@@ -16,5 +16,11 @@ types of template
     //To bind dynamic data  - {{}}
     //res.render()
 2.pug 
-3.express
+3.express-handlebars
+   //It is similar to hbs
+   //Few functions will get change 
+   SPA - layouts - index.js 
+         partials - we reuse inside the layouts 
+         home.hbs - main component 
+         people.hbs - main component
 =============================================================
