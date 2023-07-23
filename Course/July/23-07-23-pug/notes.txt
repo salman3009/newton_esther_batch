@@ -2,3 +2,8 @@ Pug:
   1.Pug is a template engine 
   2.It is similar to other template engine but we have different syntax.
   3.package name: pug
+  4.Adding dynamic data:
+        example: #{variable_name}
+  5.basic layout of pug
+        we need to use block element to create content structure 
+        extends funtionality to reuse the pug template.
