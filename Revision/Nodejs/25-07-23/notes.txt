@@ -20,3 +20,29 @@ Nodejs architecture - (first 5 points)
 5.event loop - taking care of request and response - It is running infinitely.
 6.web api - is only in browser 
 7.internal thread pool - is only available in nodejs 
+
+Core package Inside the Nodejs 
+1.fs - You can access file system 
+2.os - You can operating system
+3.path - you can access file path 
+4.http - get and post api call, you can create web server 
+
+How to import files:
+1.import/export - async in nature - Babel package - lower version of javascript
+2.require - sync in nature
+
+What is Event Emitter 
+//It consists of two process 
+     1.triggering event - (whenever data is available or data is ready);
+     2.listenining to that event and returning response.
+//all the code is written async in nature.   
+
+How to json to javascript and javascript to json?
+Frontend we need to send JSON 
+Backend we need javascript object 
+JSON convert into javascript object - JSON.parse()
+javascript object into JSON - JSON.stringify()
+
+http method:
+1.html,css,javascript,json,image,video is supported to send from backend to frontend 
+2.please practice the code of http server creation without help of expressjs 
