@@ -44,5 +44,22 @@ JSON convert into javascript object - JSON.parse()
 javascript object into JSON - JSON.stringify()
 
 http method:
+HTTP - hyper text transfer protocol
 1.html,css,javascript,json,image,video is supported to send from backend to frontend 
 2.please practice the code of http server creation without help of expressjs 
+HTTP method:
+Header portion - ALL METHODS HAVE HEADER PORTION
+   1.content-type 
+   2.url 
+       //params 
+               http://localhost:3000/45
+       //query params - optional
+                 http://localhost:3000?name=akash&location=bangalore
+   3.ip address 
+   4.custom headers - jwt token 
+Body portion  - ONLY POST,DELETE,PATCH WILL HAVE BODY PORTION 
+Method:
+GET - get the information 
+POST - payload will send inside the body part 
+PATCH 
+DELETE
