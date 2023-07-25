@@ -1,0 +1,22 @@
+MERN
+M - Mongodb (Database)
+E - Expressjs (framework of Nodejs)
+R - Reactjs (library of javascript)
+N - Nodejs (run environment for javascript)
+
+Purpose of Backend language:
+1.it should support file system 
+2.it should interact with database system 
+3.it should support network system 
+4.it should interact with os 
+
+Nodejs and chrome browser using same engine called (v8)
+
+Nodejs architecture - (first 5 points)
+1.Single thread (process in execution)
+2.stack - all primitive types and function will called here - (LIFO)
+3.queue - all async code will get store here - (FIFO)
+4.heap - array and object will get store
+5.event loop - taking care of request and response - It is running infinitely.
+6.web api - is only in browser 
+7.internal thread pool - is only available in nodejs 
