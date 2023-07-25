@@ -47,7 +47,7 @@ http method:
 HTTP - hyper text transfer protocol
 1.html,css,javascript,json,image,video is supported to send from backend to frontend 
 2.please practice the code of http server creation without help of expressjs 
-HTTP method:
+3.HTTP method structure:
 Header portion - ALL METHODS HAVE HEADER PORTION
    1.content-type 
    2.url 
@@ -58,8 +58,35 @@ Header portion - ALL METHODS HAVE HEADER PORTION
    3.ip address 
    4.custom headers - jwt token 
 Body portion  - ONLY POST,DELETE,PATCH WILL HAVE BODY PORTION 
-Method:
+
+4.List of http Methods:
 GET - get the information 
 POST - payload will send inside the body part 
 PATCH 
 DELETE
+
+5.Status code http methods 
+200 or 300 - success 
+400 or 500 - error 
+
+What is expressjs?
+//It is a third party framework for nodejs 
+Benefits:
+1.east to write restapi
+2.routing setup we can done in easy way 
+3.template engine support - (handlebars-expresshandlebars)
+4.error handling - middleware 
+5.middleware support 
+
+
+To setup the backend project.
+1.First we need package.json file.
+     //it is configuration file particular for javascript project 
+           //packages you have install 
+           //how to generate test case
+           //how to generate production code 
+           //version and name of project 
+           //script command helps to run code/test/production.
+Creating package.json file 
+cmd:npm init   
+=============================================================
