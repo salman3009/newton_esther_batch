@@ -26,3 +26,42 @@ PAYLOAD={
           },
           salary:null
 }
+
+Backend if you need to access above data:
+params:
+      //req.params;
+query params:
+      //req.query 
+payload:
+      //req.body
+
+How will you parse the incoming data in nodejs?
+//we can use third party package called body-parser to parse the incoming data.
+//body-parser will convert into javascript object so easily we can use it in our application.
+
+Middleware:
+//Handling incoming request
+//Act in intermediate between request and response.
+//All incoming request need to pass each middleware for validation check,authentication check and authorization check .if anything fail it will revert back to frontend by sending error response.
+How to write middleware insid the expressjs 
+//app.use() method 
+//After doing everything just use next() method to proceed further.
+
+how to send html file from backend.
+//we need to use sendFile() from express to send the html file 
+
+what is serversiderendering
+//each html page will be serve from backend api
+//Reactjs also we can render it from backend;
+
+How to write mutiple middelware?
+//we can attach mutiple middleware inside the routing mechanism of express.
+
+How to make development easier for nodejs so that application restart automatically?
+//third package called nodemon 
+//whenever there is change in js file automatically it will updated.
+
+How to store global data inside the express app and how we can pass to another middleware or controller 
+//req is the global object we can pass any property here and we can able to access in any middelware or controller in that particular route.
+
+
