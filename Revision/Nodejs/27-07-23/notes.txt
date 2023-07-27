@@ -139,3 +139,47 @@ CAP NOSQL
 Consistency
 availability 
 partition tolerance - If you do veritcal scaling then dividing the data equally to each machine easily taken care by mongodb.      
+
+SQL vs NoSQL 
+Table - collections 
+records - documents 
+primary key - primary key 
+foreign key - no foreign key 
+
+What is documents in mongodb 
+//It is similar to javascript object 
+//It consists of following datatype:string,number,boolean,date,array,object,null 
+//We can have multiple documents inside each collections.
+
+How to find unique element inside the mongodb?
+primarykey:
+1.It is unique key created for all the documents 
+2.It is created by database default 
+3._id will be created 
+
+Benefits of Mongodb or NOSQL
+//There is no datatype restriction 
+//There is no restriction to remove property or to add the property
+//There is no restriction to follow similar pattern 
+//Mongodb is easy to use 
+//Easy to deploy 
+//Easy to learn 
+//cost cutting 
+//performance is also good 
+//Driver is supported in latest technology in nodejs 
+//vertical scaling 
+
+What is ODM?
+ODM - Object Data modelling 
+Nodejs--->expressjs--->Mongoos(ODM)-->Mongodb 
+Mongoose
+//Provide proper datatype then only it will insert inside the database 
+//Provide property name 
+//Provide similar pattern of data 
+//Schema creation is done 
+//validation we can able to do (required,min,max,pattern,email)
+
+By using Mongoose you are making similar to SQL then what is the benefits?
+//There is no multiple tables like in sql to access we need to join all table together
+//By using single document we can able to fetch all at a time. So it will improve the performance.
+
