@@ -1,0 +1,28 @@
+How to Setup Express app
+1.create one new folder called express_project
+2.create one file inside this folder named app.js 
+3.open terminal and type "npm init"  to initialized package.json
+4.install the express app by typing in terminal: npm i expressjs
+5.Finally create the server and listen to it.
+const express = require('express');
+const app = express();
+app.listen(3000,()=>{
+    console.log("server is running on 3000");
+})
+
+Sending Data from frontend to backend using post method:
+//params 
+http://localhost:3000/45
+//query params - optional
+ http://localhost:3000?name=akash&location=bangalore
+//payload
+PAYLOAD={
+          "name":"akash"
+          "age":34,
+          "status":true,
+          "hobbies":[44,565,66],
+          "address":{
+                doorNo:"12"
+          },
+          salary:null
+}

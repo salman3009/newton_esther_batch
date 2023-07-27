@@ -58,6 +58,16 @@ Header portion - ALL METHODS HAVE HEADER PORTION
    3.ip address 
    4.custom headers - jwt token 
 Body portion  - ONLY POST,DELETE,PATCH WILL HAVE BODY PORTION 
+        PAYLOAD={
+          "name":"akash"
+          "age":34,
+          "status":true,
+          "hobbies":[44,565,66],
+          "address":{
+                doorNo:"12"
+          },
+          salary:null
+        }
 
 4.List of http Methods:
 GET - get the information 
