@@ -110,3 +110,15 @@ What type of file you can able to read inside the nodejs
 difference between dynamic api and static api 
 static api - serving static html files or fetching data from database without any condition. 
 dynamic api - send data depends upon params or query params
+
+what is routing in backend?
+//When application becomes very large it will be difficuilt to read all codes in one single function
+//Routing helps to segregate into different controller for each api request 
+//It helps code readable and maintability
+//we can use express router to setup it
+
+What is MVC pattern?
+M - Model - Schema structure
+V - View - html files  
+C - Controller - business logic (database call,validation,auth check)
+
