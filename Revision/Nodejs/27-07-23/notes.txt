@@ -92,4 +92,21 @@ PATCH Method
 Which api to delete details 
 DELETE Method 
 
+How you will store in environment file?
+//create .env file 
+//Install the package: npm i dotenv 
+//To access it : process.env
+//We can create multiple environment file so that easily we can connect to SIT,DEV,PREPROD,PROD 
 
+How will you read a data from file
+//we can inbuilt packgage 'fs' or 'fs/promises' to read file from local system.
+fs/promises - will work in async way 
+fs - will work both in sync and async 
+
+What type of file you can able to read inside the nodejs 
+//we can usually read txt file.
+//csv or excel we can use third party package to convert into json and after that we can able to read it 
+
+difference between dynamic api and static api 
+static api - serving static html files or fetching data from database without any condition. 
+dynamic api - send data depends upon params or query params
