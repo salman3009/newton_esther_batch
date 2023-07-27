@@ -75,5 +75,21 @@ What is authorization process?
 //authorization will check whether login user have access for current action.
 //Each user will have different access depends upon the roles.
 
+How you will protected the api?
+//We need to add middelware in between the controller to protect the api 
+//Inside the middleware you can do validation check,token check etc.
+
+How you will create dynamic api?
+//By using params we can create dynamic api 
+//Depends upon params detials will fetch particular data from database.
+
+Which api method to fetch information
+GET Method 
+Which api to send details from frontend 
+POST Method 
+which api to update details 
+PATCH Method 
+Which api to delete details 
+DELETE Method 
 
 
