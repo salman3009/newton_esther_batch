@@ -54,7 +54,7 @@ what is serversiderendering
 //each html page will be serve from backend api
 //Reactjs also we can render it from backend;
 
-How to write mutiple middelware?
+How to write mutiple middleware?
 //we can attach mutiple middleware inside the routing mechanism of express.
 
 How to make development easier for nodejs so that application restart automatically?
@@ -63,5 +63,17 @@ How to make development easier for nodejs so that application restart automatica
 
 How to store global data inside the express app and how we can pass to another middleware or controller 
 //req is the global object we can pass any property here and we can able to access in any middelware or controller in that particular route.
+
+What is authentication process?
+//It is used to validate the user with credentials
+//User will first register the data with our application 
+//User after register they will try to login with credentials in our application
+//Once we pass the login details it will be validated in the backend and will send the success response to frontend.
+
+What is authorization process?
+//authorization process will start after login 
+//authorization will check whether login user have access for current action.
+//Each user will have different access depends upon the roles.
+
 
 
