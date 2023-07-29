@@ -1,0 +1,60 @@
+CRUD OPERATION  IN MONGOOSE METHODS 
+1.save() - To save the document
+2.find() - To fetch the information 
+3.findOneAndUpdate() - To find the data and update it 
+4.deleteOne() - To find the data and delete it 
+
+How to count the total number of documents:
+//count()
+How we can do pagination:
+
+//skip()
+//limit()
+
+what is Comparison Operator:
+1.$eq - equality operator - [string] - It will compare two strings
+2.$gt - greater than - [number] - Comparing number
+3.$lt - less than -  [number] - Comparing number
+4.$in - [array] - Checking inside the array 
+========================================
+List of Logical operator:
+1.$and - everything should match
+2.$or - any one match 
+====================================
+regular expression:
+1.i - case insensitive 
+2.^ - start symbol 
+3.$ - end symbol 
+4.$elemMatch 
+
+Input Data:
+sathis 
+SATHIS 
+raj sathis 
+sathis kumar
+
+example:
+1.let result = await Customer.find({fullName:{$regex:/sathis/i}});
+sathis 
+SATHIS 
+raj sathis 
+sathis kumar
+
+2.let result = await Customer.find({fullName:{$regex:/^sathis/i}});
+sathis 
+SATHIS 
+sathis kumar
+
+3.let result = await Customer.find({fullName:{$regex:/sathis$/i}});
+sathis 
+SATHIS 
+raj sathis 
+
+4.let result = await Customer.find({fullName:{$regex:/^sathis$/i}});
+sathis 
+SATHIS 
+
+How to dynamic regex expression
+let search = 'sathis'; //frontend data
+let regex = new RegExp(`^${search}$`,"i");
+let result = await Customer.find({fullName:{$regex:regex}});
