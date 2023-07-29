@@ -211,3 +211,25 @@ const addressSchema = mongoose.Schema({
         }
 });
 let result = await Address.find().populate('postedBy');
+
+Any third party package to support array or string methods 
+lodash
+//some inbuilt function 
+  1.array function 
+        - .first()
+        - .nth()
+        - .chunk
+        - .filter()
+  2.object 
+         - .keys()
+         -.values()
+
+Is it safe to store raw password inside the database?If not what is the solution?
+//It is not safe to store raw password inside the database 
+//Solution is to encrypt the data by using third party package called bcrypt.
+
+ What is JWT?How JWT Will work?
+JWT is nothing but a token 
+JWT - JSON WEB TOKEN 
+It is used when frontend and backend are two separate application 
+//please explain the diagram to interviewer.
