@@ -166,4 +166,48 @@ How you will do the validation inside the mongoose?
  6.validate - regex pattern or checking total number of length of array
  7.enum - predefined values need to used inside the array 
 
- 
+ Database Modelling or How to Design the database:
+1.one-one-relationship - {} - one student - one address 
+example:
+const studentSchema = mongoose.Schema({
+      studentName:{type:String,required:true},
+      studentId:{type:String,required:true},
+      batch:{type:String},
+      permanentAddress:{
+          doorNumber:{type:String},
+          city:{type:String},
+          pinCode:{type:Number}
+      }
+})
+2.one-many-relationship - [] - one student - many address
+example:
+const studentSchema = mongoose.Schema({
+      studentName:{type:String,required:true},
+      studentId:{type:String,required:true},
+      batch:{type:String},
+      permanentAddress:[{
+          doorNumber:{type:String},
+          city:{type:String},
+          pinCode:{type:Number}
+      }]
+      //embedded sub document
+})
+3.one-many-reference-relationship  - Two separate documents
+const studentSchema = mongoose.Schema({
+      studentName:{type:String,required:true},
+      studentId:{type:String,required:true},
+      batch:{type:String},
+      addressIds:[]
+})
+
+4.reference-population-child-parent 
+const addressSchema = mongoose.Schema({
+        doorNumber:{type:String},
+        city:{type:String},
+        pinCode:{type:Number},
+        postedBy:{
+                type:mongoose.Schema.Types.ObjectId,
+                ref:'student'
+        }
+});
+let result = await Address.find().populate('postedBy');
