@@ -233,3 +233,14 @@ JWT is nothing but a token
 JWT - JSON WEB TOKEN 
 It is used when frontend and backend are two separate application 
 //please explain the diagram to interviewer.
+
+How you will do error handling inside the expressjs?
+ Basic error handling 
+ 1.always write any api function inside the try/catch block 
+ 2.We can use new Error method to throw any type of error.
+ Middleware Error Handling 
+ 1.we can use express error middleware to handle the errors occurred on api.
+ 2.we can able to add multiple error handling middleware.
+ Mongoose Error handling 
+ 1.Validation Error 
+ 2.Duplicate Error 
