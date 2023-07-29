@@ -81,7 +81,13 @@ Example:
 // ])
 
 $sort - ascending:1,descending:-1
-
+Example:
+ // let result = await Employee.aggregate([
+    //     {$match:{age:{$gte:25}}},
+    //     {$sort:{salary:1}},
+    //     {$project:{firstName:1,age:1,salary:1,_id:0}}
+    // ])
+    
 $group - 
  _id - it will bring unique data from any of the field
  $sum - it will sum up the value 
