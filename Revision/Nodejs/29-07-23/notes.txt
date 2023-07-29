@@ -244,3 +244,18 @@ How you will do error handling inside the expressjs?
  Mongoose Error handling 
  1.Validation Error 
  2.Duplicate Error 
+
+ How you will debug nodejs in development mode?
+ //we can use 'nbd' third party package to debug the error inside the nodejs 
+ //'nbd' will install the chromium debugger tool so we can debug similar to javascript in browser.
+
+ How you will identified the error in production?
+ By using Logger or logs 
+//It will print the message or information after each api or database is called.
+//package name: winston
+
+Which places we need to logs the data 
+//Before any database operation 
+//after successfull or failure database operation 
+//any api is entering or failing
+//any third party api call - sms,email,google api.
