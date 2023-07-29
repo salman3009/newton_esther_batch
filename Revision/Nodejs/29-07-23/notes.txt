@@ -153,3 +153,17 @@ Hooks
 Save method   
     1.pre - before saving the data inside the database you want to do something
     2.post  - after saving the data inside the database you want to do something    
+
+What are the types of validation available inside the mongoose?
+How you will do the validation inside the mongoose?
+//we have inbuilt validation already available inside the mongoose 
+ validation:
+ 1.required 
+ 2.minlength - to check number of characters
+ 3.maxlength  - to check number of characters
+ 4.min - to check minimum number
+ 5.max - to check maximum number
+ 6.validate - regex pattern or checking total number of length of array
+ 7.enum - predefined values need to used inside the array 
+
+ 
