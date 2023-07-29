@@ -1,0 +1,205 @@
+Nodejs architecture - (first 5 points)
+1.Single thread (process in execution)
+2.stack - all primitive types and function will called here - (LIFO)
+3.queue - all async code will get store here - (FIFO)
+4.heap - array and object will get store
+5.event loop - taking care of request and response - It is running infinitely.
+6.web api - is only in browser 
+7.internal thread pool - is only available in nodejs 
+
+Core package Inside the Nodejs 
+1.fs - You can access file system 
+2.os - You can operating system
+3.path - you can access file path 
+4.http - get and post api call, you can create web server 
+
+What is Event Emitter 
+//It consists of two process 
+     1.triggering event - (whenever data is available or data is ready);
+     2.listenining to that event and returning response.
+//all the code is written async in nature.   
+
+
+http method:
+HTTP - hyper text transfer protocol
+1.html,css,javascript,json,image,video is supported to send from backend to frontend 
+2.please practice the code of http server creation without help of expressjs 
+3.HTTP method structure:
+Header portion - ALL METHODS HAVE HEADER PORTION
+   1.content-type 
+   2.url 
+       //params 
+               http://localhost:3000/45
+       //query params - optional
+                 http://localhost:3000?name=akash&location=bangalore
+   3.ip address 
+   4.custom headers - jwt token 
+Body portion  - ONLY POST,DELETE,PATCH WILL HAVE BODY PORTION 
+        PAYLOAD={
+          "name":"akash"
+          "age":34,
+          "status":true,
+          "hobbies":[44,565,66],
+          "address":{
+                doorNo:"12"
+          },
+          salary:null
+        }
+
+What is expressjs?
+//It is a third party framework for nodejs 
+Benefits:
+1.east to write restapi
+2.routing setup we can done in easy way 
+3.template engine support - (handlebars-expresshandlebars)
+4.error handling - middleware 
+5.middleware support 
+
+Middleware:
+//Handling incoming request
+//Act in intermediate between request and response.
+//All incoming request need to pass each middleware for validation check,authentication check and authorization check .if anything fail it will revert back to frontend by sending error response.
+How to write middleware insid the expressjs 
+//app.use() method 
+//After doing everything just use next() method to proceed further.
+
+What is authentication process?
+//It is used to validate the user with credentials
+//User will first register the data with our application 
+//User after register they will try to login with credentials in our application
+//Once we pass the login details it will be validated in the backend and will send the success response to frontend.
+
+What is authorization process?
+//authorization process will start after login 
+//authorization will check whether login user have access for current action.
+//Each user will have different access depends upon the roles.
+
+How you will protected the api?
+//We need to add middelware in between the controller to protect the api 
+//Inside the middleware you can do validation check,token check etc.
+
+How you will create dynamic api?
+//By using params we can create dynamic api 
+//Depends upon params detials will fetch particular data from database.
+
+What is MVC pattern?
+M - Model - Schema structure
+V - View - html files  
+C - Controller - business logic (database call,validation,auth check)
+
+Benefits of Mongodb or NOSQL
+//There is no datatype restriction 
+//There is no restriction to remove property or to add the property
+//There is no restriction to follow similar pattern 
+//Mongodb is easy to use 
+//Easy to deploy 
+//Easy to learn 
+//cost cutting 
+//performance is also good 
+//Driver is supported in latest technology in nodejs 
+//vertical scaling 
+
+What is ODM?
+ODM - Object Data modelling 
+Nodejs--->expressjs--->Mongoos(ODM)-->Mongodb 
+Mongoose
+//Provide proper datatype then only it will insert inside the database 
+//Provide property name 
+//Provide similar pattern of data 
+//Schema creation is done 
+//validation we can able to do (required,min,max,pattern,email)
+
+How we can do pagination:
+
+//skip()
+//limit()
+
+Mongoose - aggregation 
+//It help to read the data in optimized manner 
+//It is using the concept of pipeline.
+//Multiple queries we can able to read it one after another.
+//aggregation need to write inside the array bracket
+operation:
+
+$project -> bringing specific set of data.
+Example:
+ // let result = await Employee.aggregate([{$project:{firstName:1,age:1,salary:1,_id:0}}]);
+ //1 - bring that data 
+ //0 - Dont bring that data 
+$sort - ascending:1,descending:-1
+
+What are the types of validation available inside the mongoose?
+How you will do the validation inside the mongoose?
+//we have inbuilt validation already available inside the mongoose 
+ validation:
+ 1.required 
+ 2.minlength - to check number of characters
+ 3.maxlength  - to check number of characters
+ 4.min - to check minimum number
+ 5.max - to check maximum number
+ 6.validate - regex pattern or checking total number of length of array
+ 7.enum - predefined values need to used inside the array 
+
+ Database Modelling or How to Design the database:
+1.one-one-relationship - {} - one student - one address 
+example:
+const studentSchema = mongoose.Schema({
+      studentName:{type:String,required:true},
+      studentId:{type:String,required:true},
+      batch:{type:String},
+      permanentAddress:{
+          doorNumber:{type:String},
+          city:{type:String},
+          pinCode:{type:Number}
+      }
+})
+2.one-many-relationship - [] - one student - many address
+example:
+const studentSchema = mongoose.Schema({
+      studentName:{type:String,required:true},
+      studentId:{type:String,required:true},
+      batch:{type:String},
+      permanentAddress:[{
+          doorNumber:{type:String},
+          city:{type:String},
+          pinCode:{type:Number}
+      }]
+      //embedded sub document
+})
+3.one-many-reference-relationship  - Two separate documents
+const studentSchema = mongoose.Schema({
+      studentName:{type:String,required:true},
+      studentId:{type:String,required:true},
+      batch:{type:String},
+      addressIds:[]
+})
+
+4.reference-population-child-parent 
+const addressSchema = mongoose.Schema({
+        doorNumber:{type:String},
+        city:{type:String},
+        pinCode:{type:Number},
+        postedBy:{
+                type:mongoose.Schema.Types.ObjectId,
+                ref:'student'
+        }
+});
+let result = await Address.find().populate('postedBy');
+
+ What is JWT?How JWT Will work?
+JWT is nothing but a token 
+JWT - JSON WEB TOKEN 
+It is used when frontend and backend are two separate application 
+//please explain the diagram to interviewer.
+
+How you will do error handling inside the expressjs?
+ Basic error handling 
+ 1.always write any api function inside the try/catch block 
+ 2.We can use new Error method to throw any type of error.
+ Middleware Error Handling 
+ 1.we can use express error middleware to handle the errors occurred on api.
+ 2.we can able to add multiple error handling middleware.
+ Mongoose Error handling 
+ 1.Validation Error 
+ 2.Duplicate Error 
+ 

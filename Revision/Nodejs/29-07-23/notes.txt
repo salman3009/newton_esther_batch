@@ -259,3 +259,19 @@ Which places we need to logs the data
 //after successfull or failure database operation 
 //any api is entering or failing
 //any third party api call - sms,email,google api.
+
+what is template Engine?
+//It helps express app to render the html from backend side 
+//So all the html will render from backend 
+//Inside the html to bind dynamic data from api template engine will help 
+example:
+express-handlebars
+    //To bind dynamic data  - {{}}
+    //res.render()
+    //extension .hbs
+    //#each - to loop the data inside the hbs
+SPA - layouts - index.js - entry file
+         partials - we can reuse this html anywhere inside the layouts 
+         home.hbs - main component 
+         people.hbs - main component
+========================================================         
