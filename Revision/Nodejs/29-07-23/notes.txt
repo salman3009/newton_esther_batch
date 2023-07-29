@@ -87,7 +87,8 @@ Example:
     //     {$sort:{salary:1}},
     //     {$project:{firstName:1,age:1,salary:1,_id:0}}
     // ])
-    
+
+
 $group - 
  _id - it will bring unique data from any of the field
  $sum - it will sum up the value 
@@ -116,3 +117,39 @@ $group -
    //It will bring the data for that particular date with unique value
 
 
+ 1.Document Middleware
+   Methods 
+         1.save 
+         2.validate 
+         3.remove 
+         4.updateOne 
+         5.deleteOne
+
+2.Query Middleware 
+     Methods 
+           1.count 
+           2.countDocuments 
+           3.deleteMany 
+           4.find 
+           5.findOne 
+           6.findOneAndDelete 
+           7.findOneAndRemove 
+           8.findOneAndReplace 
+           9.findOneAndUpdate 
+           10.update 
+           11.updateOne 
+           12.updateMany 
+           13.findById 
+
+3.Aggregate Middleware
+           all Aggregate methods ($group,$project,$sum,$match,$dateToString)
+
+4.Model Middleware 
+        methods 
+           1.insertMany
+
+
+Hooks 
+Save method   
+    1.pre - before saving the data inside the database you want to do something
+    2.post  - after saving the data inside the database you want to do something    
