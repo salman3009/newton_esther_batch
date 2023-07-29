@@ -79,6 +79,7 @@ const findOperationAggregation=async()=>{
      
    //$group 
    //$dateToString 
+   //It will bring the data for that particular date with unique value
    let result = await Employee.aggregate([{$group:{_id:{$dateToString:{format:'%m-%d-%Y',date:'$date'}}}}]);
 
 

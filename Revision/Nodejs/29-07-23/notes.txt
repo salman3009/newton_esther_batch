@@ -25,7 +25,7 @@ regular expression:
 1.i - case insensitive 
 2.^ - start symbol 
 3.$ - end symbol 
-4.$elemMatch 
+
 
 Input Data:
 sathis 
@@ -58,3 +58,55 @@ How to dynamic regex expression
 let search = 'sathis'; //frontend data
 let regex = new RegExp(`^${search}$`,"i");
 let result = await Customer.find({fullName:{$regex:regex}});
+
+
+Mongoose - aggregation 
+//It help to read the data in optimized manner 
+//It is using the concept of pipeline.
+//Multiple queries we can able to read it one after another.
+//aggregation need to write inside the array bracket
+operation:
+
+$project -> bringing specific set of data.
+Example:
+ // let result = await Employee.aggregate([{$project:{firstName:1,age:1,salary:1,_id:0}}]);
+ //1 - bring that data 
+ //0 - Dont bring that data 
+
+$match-->filter
+Example:
+ // let result = await Employee.aggregate([
+//     {$match:{firstName:'sathish',age:{$gte:25}}},
+//     {$project:{firstName:1,age:1,salary:1,_id:0}}
+// ])
+
+$sort - ascending:1,descending:-1
+
+$group - 
+ _id - it will bring unique data from any of the field
+ $sum - it will sum up the value 
+ $match - it will filter data normal match , comparsion operator ,logical operator
+ $avg - finding average for particular field
+ $push  - will create new array and push the value
+ $dateToString - string format of date
+ Example:
+ //$group - It will bring unqiue value from firstName field
+     // let result = await Employee.aggregate([{$group:{_id:"$firstName"}}])
+
+    // //$group - $sum - It will bring unqiue value + for that unqiue value total salary if we have duplicate firstName it will add it together.
+    // let result = await Employee.aggregate([{$group:{_id:"$firstName",totalAmount:{$sum:'$salary'}}}]);
+
+     //$group - $match - It will bring unqiue value + for that unqiue value total salary if we have duplicate firstName it will add it together and after that it will filter the data with totalAmount:40000
+     //let result = await Employee.aggregate([{$group:{_id:"$firstName",totalAmount:{$sum:'$salary'}}},{$match:{totalAmount:{$gt:40000}}}]);
+    
+     //$group - $avg - it will find the average field
+    // let result = await Employee.aggregate([{$group:{_id:null,averageDetails:{$avg:"$salary"}}}]);
+
+    //$group - $push - It will create one new array and it will start pushing the value.
+   // let result = await Employee.aggregate([{$group:{_id:'$firstName',listSalary:{$push:'$salary'}}}]);
+     
+   //$group 
+   //$dateToString 
+   //It will bring the data for that particular date with unique value
+
+
