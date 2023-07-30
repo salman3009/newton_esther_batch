@@ -46,3 +46,41 @@ How you will move from one page to another page?
 //If you want to open in the new tab we need to use target attribute with _blank 
 //If you want to open in the same page need to use anything it is default.
 
+HTML is divided into two elements: 
+(i)block element - It will not allow next tag in the same line
+(ii)inline element - It will allow multiple tag in the same line 
+
+Example:
+<p> is block element
+<h1>to <h6> is block element 
+<div> important tag block element (plain block element)
+
+Inline element:
+<span> tag - plain inline element 
+img tag 
+input tag 
+anchor tag 
+li tag 
+b tag 
+td tag 
+
+Why div is used in many places in reactjs or other application?
+//div tag is plain block element we can apply our own custom css 
+
+what is Meta tag?
+//meta tag will be available inside the head section 
+//google search keyword or description will match with your meta tag 
+//metag tag will increase the rank in SEO
+//SEO - search engine optimization
+syntax:
+example:
+<meta name="Keywords" content="Laptop,Mobile,Desktop">
+<meta name="Description" content="But online e-commerce,
+50%offer on laptop">
+<meta name="author" content="flipkart">
+<meta name="viewport" content="device=device-width,initial-scale=1">
+<meta charset="utf-8">
+utf-8 - website is written in english language 
+viewport - To adjust zoom in mobile,tab,Desktop
+
+
