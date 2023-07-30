@@ -141,3 +141,23 @@ border: 10px double black;
 4.margin
    //It will change the layout of the element
    //top,left,right,bottom
+
+display property:
+1.block 
+example:
+display:block
+//it will block entire line and next tag will start in new line
+//width and height will work here
+//mostly we can change the inline to block if requirment is there
+
+2.inline 
+example:
+display:inline
+//it will continue in the same line
+//width and height will not work here
+//block to inline mostly we will not have this requirement.
+//inline element will not allow width and height property 
+
+3.inline-block 
+//it will continue in the same line but will accept the width and height.
+//inline to inline-block and block to inline-block.
