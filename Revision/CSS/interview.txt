@@ -161,3 +161,9 @@ display:inline
 3.inline-block 
 //it will continue in the same line but will accept the width and height.
 //inline to inline-block and block to inline-block.
+
+4flex 
+//single-dimension layout it similar to inline-block but we have extra functionality 
+
+5grid
+//2-dimension layout we can adjust row and column together 
