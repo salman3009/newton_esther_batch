@@ -1,0 +1,11 @@
+Position:
+0.All position property will have alignment left,right,bottom,top except static 
+1.static position we don't have alignment(left,right,bottom,top)
+2.Browser default position is static.It means elements are arrange according to parent position.
+3.sticky/fixed - It will fixed in one particular position
+4.relative - It is similar to static position but it will support alignment(left,right,top,bottom)
+5.absolute - it will not follow the normal flow of the document. always it will position depends upon thse parent tag body.
+opacity - It will make the element transparent - 0 to 1
+z-index - when element is overriding which elements to be shown behind and forward 
+  z-index:-1 ---> Element will go behind the screen 
+  z-index:1 ---> Element will be in forward screen 
