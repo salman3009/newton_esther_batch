@@ -8,4 +8,8 @@ what is gradient?
 //It consists of two types 
      1.linear  
      2.radial
-     
+Important Points:
+flex
+grid
+margin:auto
+text-align-center
