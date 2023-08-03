@@ -84,3 +84,7 @@ CSS Units:
 Any project layout 
 //You can always proceed with px 
 //always use flex or grid 
+====================================
+box-sizing:
+//Padding wil be adjusted whatever the width and height we have given for that particular element.
+=======================================
