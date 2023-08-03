@@ -183,6 +183,63 @@
             }
         }
     </style>
+    <section class="grid-section">
+        <h1>Pick your Premium</h1>
+        <article class="grid-global">
+            <section class="grid-box">
+
+            </section>
+            <section class="grid-box">
+
+            </section>
+            <section class="grid-box">
+
+            </section>
+            <section class="grid-box">
+
+            </section>
+        </article>
+    </section>
+    <style>
+        .grid-global{
+            display: grid;
+            grid-template-columns: repeat(2,45%);
+            gap:20px;
+            justify-content: space-evenly;
+        }
+        .grid-box{
+            border:1px solid orange;
+            min-height: 200px;
+        }
+        .grid-section{
+            min-height: 600px;
+        }
+    </style>
+    <footer>
+        <ul>
+            <li><i class="fa-brands fa-twitter fa-footer"></i></li>
+            <li><i class="fa-brands fa-instagram fa-footer"></i></li>
+            <li><i class="fa-brands fa-facebook fa-footer"></i></li>
+            <li><i class="fa-regular fa-envelope fa-footer"></i></li>
+        </ul>
+    </footer>
+    <style>
+        footer{
+            width: 100%;
+            height: 200px;
+            background-color: black;
+            color:white;
+        }
+        ul{
+            display: flex;
+            gap:40px;
+            justify-content: center;
+        }
+        .fa-footer{
+            margin:50px;
+            font-size: 40px;
+        }
+    </style>
 </body>
 
 </html>
