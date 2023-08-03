@@ -75,12 +75,16 @@
         }
 
         button {
+            cursor: pointer;
             border: 0;
             background-color: white;
             width: 135px;
             height: 35px;
             font-size: 18px;
             border-radius: 8px;
+        }
+        button:hover{
+            transform: scale(1.2);
         }
 
         @media (max-width:600px) {
@@ -94,10 +98,89 @@
             }
 
             h1 {
-            text-align: center;
-            padding: 5px;
-            font-size: 20px;
+                text-align: center;
+                padding: 5px;
+                font-size: 20px;
+            }
         }
+    </style>
+
+    <section class="table-section">
+        <h1>Experience the difference</h1>
+        <table>
+            <tr>
+                <th>What you get</th>
+                <th>Premium Plan</th>
+                <th>Free Plan</th>
+            </tr>
+            <tr>
+                <td>Access to all audio content</td>
+                <td><i class="fa-solid fa-circle-check"></i></td>
+                <td><i class="fa-solid fa-circle-xmark"></i></td>
+            </tr>
+            <tr>
+                <td>Ad-free music listening</td>
+                <td><i class="fa-solid fa-circle-xmark"></i></td>
+                <td><i class="fa-solid fa-circle-check"></i></td>
+            </tr>
+            <tr>
+                <td>Enhanced playlists</td>
+                <td><i class="fa-solid fa-circle-check"></i></td>
+                <td><i class="fa-solid fa-circle-check"></i></td>
+            </tr>
+            <tr>
+                <td>Download songs</td>
+                <td><i class="fa-solid fa-circle-check"></i></td>
+                <td><i class="fa-solid fa-circle-xmark"></i></td>
+            </tr>
+        </table>
+        <h1>Get 3 months of Premium for free.</h1>
+        <section class="header-button-section">
+            <button class="table-button">Get three months</button>
+        </section>
+
+    </section>
+    <style>
+        .table-section {
+            background-color: #9c9ccf;
+            color: white;
+        }
+
+        table {
+            width: 50%;
+            text-align: center;
+            margin: auto;
+            color: white;
+            padding: 10px;
+            font-size: 22px;
+        }
+
+        td {
+            border-bottom: 1px solid white;
+            padding: 10px;
+        }
+
+        .fa-circle-check {
+            color: green;
+        }
+
+        .fa-circle-xmark {
+            color: red;
+        }
+
+        .table-button {
+            width: 180px;
+        }
+
+        @media (max-width:650px) {
+            table {
+                width: 100%;
+
+            }
+
+            .table-button {
+                width: 100%;
+            }
         }
     </style>
 </body>
