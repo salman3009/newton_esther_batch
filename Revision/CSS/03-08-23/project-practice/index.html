@@ -7,28 +7,41 @@
 </head>
 
 <body>
-    <nav>
-        <i class="fa-brands fa-linkedin"></i>
-        <ul>
-            <li>Contact</li>
-            <li>Premium</li>
-            <li>Download</li>
-        </ul>
-    </nav>
+    <section class="header-section">
+        <nav>
+            <i class="fa-brands fa-linkedin"></i>
+            <ul>
+                <li>Contact</li>
+                <li>Premium</li>
+                <li>Download</li>
+            </ul>
+        </nav>
+        <h1>Introducing Premium Mini</h1>
+        <h1>₹7 for 1 day. ₹25 for 1 week.</h1>
+        <section class="header-button-section">
+            <button><i class="fa-brands fa-windows"></i> Download</button>
+            <button><i class="fa-brands fa-apple"></i> Download</button>
+        </section>
+    </section>
+
     <style>
         body {
             margin: 0;
             padding: 0;
-            font-family: cursive;
+            font-family: fangsong;
+        }
+
+        .header-section {
+            background-color: #0c0cb2;
+            color: white;
         }
 
         nav {
-            background-color: #0c0cb2;
             display: flex;
             padding: 0 20px;
             font-weight: bolder;
             font-size: 22px;
-            color: #ffac13;
+
             justify-content: space-between;
         }
 
@@ -40,12 +53,51 @@
         }
 
         li:hover {
-            color: white;
+            color: orange;
         }
 
         .fa-linkedin {
             font-size: 54px;
             margin-top: 10px;
+        }
+
+        h1 {
+            text-align: center;
+            padding: 20px;
+            font-size: 26px;
+        }
+
+        .header-button-section {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 25px;
+        }
+
+        button {
+            border: 0;
+            background-color: white;
+            width: 135px;
+            height: 35px;
+            font-size: 18px;
+            border-radius: 8px;
+        }
+
+        @media (max-width:600px) {
+            .header-button-section {
+                display: block;
+            }
+
+            button {
+                width: 100%;
+                margin-top: 10px;
+            }
+
+            h1 {
+            text-align: center;
+            padding: 5px;
+            font-size: 20px;
+        }
         }
     </style>
 </body>
