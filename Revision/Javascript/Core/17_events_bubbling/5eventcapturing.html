@@ -1,0 +1,25 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+  <meta charset="utf-8">  
+  <meta name="viewport" content="width=device-width">  
+  <title>Event Capturing</title>  
+</head>  
+<body>  
+  <div id="p1">  
+    <button id="c1">I am Child</button>  
+  </div>  
+    
+  <script>  
+    var parent = document.querySelector('#p1');  
+    var child = document.querySelector('#c1');  
+  
+    parent.addEventListener('click', function(){  
+      console.log("Parent is invoked");  
+    },true);  
+    child.addEventListener('click', function(){  
+      console.log("Child is invoked");  
+    });  
+  </script>  
+</body>  
+</html>  

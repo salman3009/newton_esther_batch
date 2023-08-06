@@ -1,0 +1,61 @@
+<script>
+const sum = 35 + "hello"
+console.log(sum)
+// 35hello
+console.log(typeof sum)
+// string
+</script>
+
+<script>
+    const times = 35 * "hello"
+    console.log(times)
+</script>
+
+<script>
+    const string = ""
+const number = 40
+const boolean = true
+
+console.log(!string)
+// true - string is coerced to boolean `false`, then the NOT operator negates it
+
+console.log(boolean + string)
+// "true" - boolean is coerced to string "true", and concatenated with the empty string
+
+console.log(40 + true)
+// 41 - boolean is coerced to number 1, and summed with 40
+</script>
+
+
+<script>
+    //explicit
+var numbers = 30;
+var numberConverts = String(numbers)
+console.log(numberConverts)
+// "30"
+console.log(typeof numberConvert)
+// string
+</script>
+
+<script>
+    const numberBoolean = 30
+
+const numberConvert = Boolean(numberBoolean)
+
+console.log(numberConvert)
+// true
+
+console.log(typeof numberConvert)
+// boolean
+</script>
+
+<script>
+    const apiData = {
+  rate: "50"
+}
+
+const rate = Number(apiData.rate)
+
+console.log(rate === 50)
+// true
+</script>

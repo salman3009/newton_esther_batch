@@ -1,0 +1,30 @@
+<!-- <script>
+    const symbol = Symbol('description')
+    console.log(typeof symbol);
+    const symbolTwo = Symbol(33);
+    console.log(symbolTwo);
+    const symbolThree = Symbol(33);
+    console.log(symbolThree);
+    console.log(symbolTwo == symbolThree);
+</script> -->
+
+<script>
+    const idSym = Symbol('id');
+    let user={
+        id:9451,
+        name:"akash",
+        city:"chennai",
+        age:33,
+        [idSym]:3333
+    };
+    //private symbols
+    console.log(Object.getOwnPropertyNames(user));
+    //here we can see it
+    console.log(Object.getOwnPropertySymbols(user));
+    //private symbols
+    for(let obj in user){
+        console.log(obj);
+    }
+    //private symbols
+    console.log(JSON.stringify(user));
+</script>

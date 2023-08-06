@@ -1,0 +1,44 @@
+https://humanwhocodes.com/blog/2014/01/21/private-instance-members-with-weakmaps-in-javascript/
+<!-- <script>
+    function Person(name) {
+    this.getName = function() {
+        return name;
+    };
+}
+ let fullName = new Person("rakesh");
+ console.log(fullName.getName());
+</script> -->
+
+<!-- <script>
+function Person(name) {
+    this._name = name;
+}
+
+Person.prototype.getName = function() {
+    return this._name;
+};
+
+let fullName = new Person("rakesh");
+ console.log(fullName.getName());
+</script> -->
+
+<script>
+    var Person = (function() {
+
+var sharedName;
+
+function Person(name) {
+    sharedName = name;
+}
+
+Person.prototype.getName = function() {
+    return sharedName;
+};
+
+return Person;
+}());
+let firstNameOne = new Person("akash");
+let secondNameOne = new Person("suresh");
+console.log(secondNameOne.getName());
+console.log(firstNameOne.getName());
+</script>

@@ -1,0 +1,23 @@
+<!-- <script>
+    const x={};
+    const a={};
+    const b={
+        num:1
+    }
+    x[a]='a';
+    x[b]='b';
+    console.log(x);
+</script> -->
+
+<script>
+    const a={};
+    const b={
+        num:1
+    }
+    const map = new Map();
+    map.set(a,'a');
+    map.set(b,'b');
+    console.dir(map);
+    const details =[...map];
+    console.log(details);
+</script>
