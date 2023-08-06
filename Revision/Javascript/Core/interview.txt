@@ -1,17 +1,94 @@
 What is javascript?
-It is dynamic language in web browser 
-It will work as combination with html,css 
-All browser as compiler present in it 
-If you want to run javascript outside the browser you need to have .nodejs
+1.It is dynamic language in web browser 
+2.It will work as combination with html,css 
+3.All browser as compiler present in it 
+4.If you want to run javascript outside the browser you need to have .nodejs
+5.client side scripting 
+6.interpreted language (line by line execution)
+7.open source - (MIT license anyone can use it)
+8.cross-platform (in any operating system it will run)
+9.case sensitive (there is difference between capital and small letter)
+10.Chrome browser(V8 Engine)
 =======================================
 Javascript you can write in two ways:
 1.internal --->Inside the html file itself 
 //you can use multiple script tag inside the html file. 
+//Anywhere inside the html tag we can write either in head tag or body tag.
 <script>
 </script>
 2.external ---> We are going to create separate .js file 
 //in html we need to import their file location 
 //It is more preferred way because html and css are in separate file 
 //It will make code maintainability.
+//Anywhere inside the html tag we can write either in head tag or body tag.
 ==========================================
+What is variable?
+variable: Storing some set of data inside the memory.
+= assignment operator
+synatax:
+var laptopName = "sony"; 
+===================================================
+Datatype:depends upon the space we need to create data.
+Primitive Types:
+1.string 
+2.number 
+3.boolean 
+4.undefined
+Non - Primitive Types:
+1.Object --->Object,Array,Null
+=============================================
+Javascript has dynamic typing
+example:
+var fullName = "rakesh";
+fullName = 44;
+==========================================
+How to check datatype inside the javascript?
+typeof variable_name 
+==================================
+Types of operator?
+1.Arithmetic operator 
+      //+,-,*,/,++,--
+2.comparison operator 
+      //!==,!=,<,>,<=,>-,==,===
+3.Logical operator 
+       //&&,||,!
+4.conditional operator 
+       condition?yes:no 
+=======================================
+Difference between == and === operator?
+//== It will check only value 
+//=== It will check value + datatype 
+'3' == 3 - true 
+'3' === 3 - false 
+=====================================
+String cancatenation 
+//By using + symbol two string will combine together 
+let result = "car" + "tata"
+//car tata 
+====================================
+Logical operator:
+    var a = 'hello' || '';             // a = 'hello'
+var b = '' || [];                  // b = []
+var c = '' || undefined;           // c = undefined
+var d = 1 || 5;                    // d = 1
+var e = 0 || {};                   // e = {}
+var f = 0 || '' || 5;              // f = 5
+var g = '' || 'yay' || 'boo';      // g = 'yay'
 
+
+var a = 'hello' && '';                  // a = ''
+var b = '' && [];                       // b = ''
+var c = undefined && 0;                 // c = undefined
+var d = 1 && 5;                         // d = 5
+var e = 0 && {};                        // e = 0
+var f = 'hi' && [] && 'done';           // f = 'done'
+var g = 'bye' && undefined && 'adios';  // g = undefined
+======================================================
+Typescasting are two ways 
+1.implicit 
+   45 + hello = string type 
+2.explicit 
+    Number("33")
+    String()
+    Boolean()
+=======================================================
