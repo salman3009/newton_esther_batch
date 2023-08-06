@@ -92,3 +92,62 @@ Typescasting are two ways
     String()
     Boolean()
 =======================================================
+Decision Making 
+1.if-else - else if ladder  
+2.switch
+false condition - '',0,null,NaN,undefined,false
+===========================================
+What is function?
+//We can write resuable code in particular block so that we can reuse it later 
+//We can call multiple times same function with different parameters 
+//Function make code maintainability and it will increase the performance.
+//return keyword will return the result of that function 
+//To get dynamic inputs we can pass inside the parameters.
+============================================
+String methods:
+1.length 
+2.toLowerCase()
+3.loUpperCase()
+4.replace() - replacing the string with another new words
+5.concat() - combination
+6.trim() - removing while space
+8.chartAt() - it will return character if we pass index
+9.indexOf() - it will return index if we pass character
+10.slice()/substring() - It will break the string into smellar portion
+========================
+Similar methods in array from strings 
+1.length 
+2.indexOf()
+3.slice()
+3.concat()
+4.includes()
+===================================
+complexity of array:
+Array index will start from zero.
+1.Insertion - 0(1) it is inserted at the end position - (push())
+0(N) it is inserted at the first position - (unshift())
+2.removal - 0(1) it is removed at the end position - (pop())
+0(N) it is at the first position. - (shift())
+3.searching - 0(N) -find()
+4.accessing - 0(1)
+=============================================
+Any problems 
+input value is number --> string -->array 
+input value is string--->array 
+input value is object keep in object -->array 
+===============================
+Other Array methods:
+1.splice() - it is similar to slice() method but it will change original array.
+2.sort() - it will sort the array in ascending or descending
+3.reverse()
+4.includes() - it will boolean true if the value is present
+==================
+Converting array to string 
+1.toString()
+2.join()
+====================
+converting string to array 
+1.split()
+=========================
+Callback function - some function we are going to call after some condition is met.
+==============================================
