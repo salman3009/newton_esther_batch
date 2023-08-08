@@ -84,9 +84,10 @@ var e = 0 && {};                        // e = 0
 var f = 'hi' && [] && 'done';           // f = 'done'
 var g = 'bye' && undefined && 'adios';  // g = undefined
 ======================================================
-Typescasting are two ways 
+Typescasting are two ways
+//converting from one datatype to another datatype  
 1.implicit 
-   45 + hello = string type 
+   45 + hello = string type = 45hello 
 2.explicit 
     Number("33")
     String()
@@ -110,10 +111,10 @@ String methods:
 3.loUpperCase()
 4.replace() - replacing the string with another new words
 5.concat() - combination
-6.trim() - removing while space
+6.trim() - removing white space
 8.chartAt() - it will return character if we pass index
 9.indexOf() - it will return index if we pass character
-10.slice()/substring() - It will break the string into smellar portion
+10.slice()/substring() - It will break the string into smaller portion
 ========================
 Similar methods in array from strings 
 1.length 
@@ -123,6 +124,7 @@ Similar methods in array from strings
 4.includes()
 ===================================
 complexity of array:
+Array will store the values continously.
 Array index will start from zero.
 1.Insertion - 0(1) it is inserted at the end position - (push())
 0(N) it is inserted at the first position - (unshift())
@@ -141,6 +143,34 @@ Other Array methods:
 2.sort() - it will sort the array in ascending or descending
 3.reverse()
 4.includes() - it will boolean true if the value is present
+6.isArray()
+7.map function
+//map function will not change original array
+//it will add/remove or check some condition and it will return new set of data.
+//it consists of two parameter (i)each iteration value (ii)index value.
+
+8.filter function:
+//it will not change the original array 
+//It is used to filter the data depends upon the condition.
+//Once condition is met it will return the following value into the new array.
+//filter consists of callback function.
+
+9.find function:
+//it will not change the original array.
+//It is used to find one particular data. IF matches found it will stop searching further
+//it also consists of index parameter as well.
+
+10.reduce function: 
+//it will not change the original array. 
+//it used to reduce the value into single parameter 
+//it consists of two parameter one is return result and next one is iteraion value.
+
+11.findIndex  -- once match found it will return the index value it will start from position 0 if not found it will return -1.
+12.findLast  - it will find the last vale once match is found it will start from position last.
+13.findLastIndex - it will find the last occurence of that particular value in the given array. 
+
+14.some - any one value is met the condition it will return the boolean value true otherwise false.
+15.every - if all the value is met the condition then only it will return true otherwise false.
 ==================
 Converting array to string 
 1.toString()
@@ -151,3 +181,22 @@ converting string to array
 =========================
 Callback function - some function we are going to call after some condition is met.
 ==============================================
+Loops:
+for 
+while 
+do/while - It will run atleast one time even in negative case.
+statement 
+break 
+continue 
+==================================
+break 
+//switch otherwise inside the loops(for,while,dowhile)
+===================================
+return 
+//It will work only inside the function 
+=====================================
+loops for array 
+//for of - real time for iteration we can use for of loop 
+//forEach 
+===========================================
+
