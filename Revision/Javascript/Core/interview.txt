@@ -2,7 +2,7 @@ What is javascript?
 1.It is dynamic language in web browser 
 2.It will work as combination with html,css 
 3.All browser as compiler present in it 
-4.If you want to run javascript outside the browser you need to have .nodejs
+4.If you want to run javascript outside the browser you need to have nodejs
 5.client side scripting 
 6.interpreted language (line by line execution)
 7.open source - (MIT license anyone can use it)
