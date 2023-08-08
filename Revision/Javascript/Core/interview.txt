@@ -199,4 +199,82 @@ loops for array
 //for of - real time for iteration we can use for of loop 
 //forEach 
 ===========================================
+Data structure:
+1.Array - order important - key is constant
+2.Object - no order - key is  unique - you need to give key
+Object:
+Object consists of properties and method 
+//method is nothing but function 
+this --> it will refer to current object 
+To iterate the data inside the object we have for in loop.
+Object methods:
+1.Object.keys()
+2.Object.values()
+3.Object.entries()
+4.hasOwnProperty()
+for in 
+======================================================
+Array:
+//Please initialize array always with [] 
+//If we add null during initialize it will through the error 
+==================================================
+Math Method:
+1.Number() 
+2.parseInt()
+3.parseFloat()
+4.toFixed()
+5.random()
+==============================
+Date:
+//To display the date in javascript 
+//YOu can display only year 
+//You can display only month 
+//You can display only hours,minutes,seconds
+//you can combine together
+//you can set the value 
+//Date one type of inbuild object in javascript 
+example:
+var date = new Date();
+console.log(date);
+================================================
+DOM:Document Object Modal 
+//javascript need to interact with html 
+//Each html element will be converted into object 
+//tree like structure 
+//window object it provided by javascript default 
+//window object have hundreds of method to support CRUD operation
+//Inside window we have document object 
+
+Elements: p,h1,a,img,li,nav 
+Attributes: id,name,class,readonly,disable.
+Style and Class : css
+Events:click,change,mouse..
+
+Types of DOM Selectors:
+//Use to access existing element.
+1.getElementById:
+//it will access the element using id attribute.
+//innerHTML property will help you to add dynmic content inside the html.
+style attribute:
+//you can attach css properties
+//inside this propery hypen is not allowed. Instead we need to add capital letter after hyphen and remove the hyphen symbol.
+
+1.we can add the content 
+2.we can set the attribute dynamically.example src 
+3.we can write the inline style dynamically example  style.color 
+4.we can write css class dynamically using classList.add()
+=========================================
+Events:
+1.onClick 
+2.onChange 
+3.onSubmit
+//Events will provide event object 
+//It consists of multiple methods but mostly used 
+//preventDefault()
+//stopPropagation()
+//target.id 
+//target.name 
+//target.checked 
+//target.value 
+===================================
 
