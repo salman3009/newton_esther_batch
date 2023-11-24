@@ -1,0 +1,30 @@
+https://www.codecademy.com/resources/docs/javascript/regexp
+<script>
+    // Using literal notation
+let re1 = /foo/i;
+console.log(re1.test("foo"));
+// Using RegExp constructor
+let re2 = new RegExp('foo', 'i');
+console.log(re2.test("foo"));
+</script>
+
+<!-- <script>
+let re3 = new RegExp('foo', 'i');
+console.log("foo".match(re3));
+</script> -->
+
+<!-- <script>
+    const p = 'html is web language. HTML is easy to understand';
+
+console.log(p.replaceAll('html', 'web development'));
+
+const regex = /html/ig;
+console.log(p.replaceAll(regex, 'web development'));
+
+var result = p.replaceAll(regex,(input)=>{
+    debugger;
+       return `<span>${input}</span>`
+});
+
+console.log(result);
+</script>  -->

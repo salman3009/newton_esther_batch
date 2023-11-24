@@ -1,0 +1,50 @@
+<script>
+    const employee={
+        name:"sandeep",
+        age:45,
+    };
+
+    //default writable is true for every property in object
+    Object.defineProperty(employee,'age',{
+        writable:false
+    })
+    
+    Object.defineProperty(employee,'name',{
+        value:"rakesh",
+        writable:true
+    })
+    employee.age = 78;
+    employee.name = "suresh";
+    console.log(employee);
+
+
+    //value property
+    Object.defineProperty(employee,"city",{
+        value:"bangalore"
+    });
+    console.log(employee);
+
+
+    //configurable
+    Object.defineProperty(employee,'name',{
+        configurable:false
+    });
+    delete employee.name;
+    console.log(employee);
+
+
+    //enumerable
+    Object.defineProperty(employee,'age',{
+        value:56,
+        enumerable:false
+    });
+    
+    employee.age = 67;
+    for(let obj in employee){
+        console.log(obj);
+    }
+
+    let keys = Object.keys(employee);
+    console.log(keys);
+
+</script>

@@ -1,0 +1,39 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" 
+          content="IE=edge"> 
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0"> 
+    <title>Polyfill</title> 
+</head> 
+<body> 
+    <h1 style="text-align: center;color: green;"> 
+      Welcome to GeeksforGeeks : Polyfill testing 
+    </h1> 
+    <h1 style="text-align: center;color: green;">  
+      Polyfill-Features 
+    </h1> 
+    <h3>(The features will be displayed after 3 secs)</h3> 
+    <ul> 
+        <li id="one"> 
+        </li> 
+        <li id="two"> 
+  
+        </li> 
+        <li id="three"> 
+  
+        </li> 
+    </ul> 
+    <h4>We have used promises to understand how to use polyfill</h4> 
+    <h1>Promises</h1> 
+    <h4 id="four"></h4> 
+    
+    <!-- Polyfill.min.js file from node_modules and promise_es5 -->
+    <script type=”text/javascript” src="node_modules/babel-polyfill/dist/polyfill.min.js"></script>
+    <script type="text/javascript"
+            src="promises_es5.js"> 
+    </script> 
+</body> 
+</html>

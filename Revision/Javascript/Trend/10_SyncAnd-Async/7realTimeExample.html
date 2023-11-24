@@ -1,0 +1,60 @@
+<div class="notification" id="notif1">Notification 1</div>
+<div class="notification" id="notif2">Notification 2</div>
+<div class="notification" id="notif3">Notification 3</div>
+<div class="notification" id="notif4">Notification 4</div>
+<p id="finalMessage"></p>
+<style>
+    .notification {
+    margin: 10px;
+    padding: 15px;
+    border: 1px solid gray;
+    background-color: #e7e7e7;
+    width: 200px;
+    text-align: center;
+    display: none;
+}
+</style>
+<script>
+    function displayNotification(elementId, callback) {
+    setTimeout(() => {
+        document.getElementById(elementId).style.display = 'block';
+        callback && callback();
+    }, 2000);
+}
+
+displayNotification('notif1', () => {
+    displayNotification('notif2', () => {
+        displayNotification('notif3', () => {
+            displayNotification('notif4', () => {
+                setTimeout(() => {
+                    document.getElementById('finalMessage').textContent = "All notifications displayed!";
+                }, 2000);
+            });
+        });
+    });
+});
+
+</script>
+
+<!-- <script>
+    function displayNotification(elementId){
+        return new Promise((resolve,reject)=>{
+            setTimeout(()=>{
+                 document.getElementById(elementId).style.display = 'block';
+                 resolve();
+            },2000);
+        })
+    }
+
+    async function display(){
+          await displayNotification('notif1');
+          await displayNotification('notif2');
+          await displayNotification('notif3');
+          await displayNotification('notif4');
+    }
+
+    display().then(()=>{
+         document.getElementById('finalMessage').textContent = "All notifications displayed!";
+    })
+</script> -->
+

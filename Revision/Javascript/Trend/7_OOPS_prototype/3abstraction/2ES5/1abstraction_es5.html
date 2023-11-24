@@ -1,0 +1,24 @@
+<script>
+    function Employee(name,age){
+        let salary = 0; //encapsulation
+        this.name = name;
+        this.age = age;
+
+        let addBonusIncrement = function(){
+            return salary + 5000;
+        }//abstraction
+        
+        Object.defineProperty(this,'set_get_salary_details',{
+          set(input){
+            salary = input;
+          },
+          get(){
+            return addBonusIncrement();
+          }
+        })
+
+    }
+    let akashEmployee = new Employee("akash",33);
+    akashEmployee.set_get_salary_details = 10000;
+    console.log(akashEmployee.set_get_salary_details);
+</script>

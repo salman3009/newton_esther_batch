@@ -1,0 +1,12 @@
+<script>
+    const a = { a: 1 };
+    const b = Object.create(a);
+    let firstProto = Object.getPrototypeOf(b);
+    console.log(firstProto);
+    let secondProto = Object.getPrototypeOf(firstProto);
+    console.log(secondProto);
+    let thirdProto = Object.getPrototypeOf(secondProto);
+    console.log(thirdProto);
+</script>
+    
+   

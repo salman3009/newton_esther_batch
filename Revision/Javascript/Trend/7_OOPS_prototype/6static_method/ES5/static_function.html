@@ -1,0 +1,19 @@
+<script>
+    function Person(firstName, lastName) {
+   this.firstName = firstName;
+   this.lastName = lastName;
+}
+
+Person.isPerson = function(){
+   return true;
+}
+
+Person.prototype.getDisplay=function(){
+   return this.firstName;
+}
+
+let akashPerson = new Person("akash","ajay");
+console.log(akashPerson.getDisplay());
+
+console.log(Person.isPerson());
+</script>

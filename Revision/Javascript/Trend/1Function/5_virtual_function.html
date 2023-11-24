@@ -1,0 +1,23 @@
+<script>
+    function A() {
+    this.virtualFunction();
+  }
+  
+  A.prototype.virtualFunction = function() {
+    alert('A');
+  };
+  
+  //-------------------------------------
+  
+  function B() {
+     A.call(this);
+  }
+  
+  B.prototype = Object.create(A.prototype);
+  B.prototype.constructor = B;
+  B.prototype.virtualFunction = function() {
+    alert('B');
+  };
+  
+  var b = new B();
+  </script>

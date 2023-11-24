@@ -1,0 +1,27 @@
+<script>
+    function Employee(name,age,salary){
+        this.name = name;
+        this.age = age; 
+        this.salary = salary;
+    }
+    //above property is instance member;
+
+    Employee.prototype.location = "bangalore";
+    //above property is prototype member - shared in all instance 
+
+    let akashEmployee = new Employee("akash",23,20000);
+    let sureshEmployee = new Employee("suresh",33,30000);
+    akashEmployee.age = 45;
+    console.log(akashEmployee.age);
+    console.log(sureshEmployee.age);
+    console.log(akashEmployee.location);
+    console.log(sureshEmployee.location);
+    akashEmployee.__proto__.location = "delhi";
+    console.log(akashEmployee.location);
+    console.log(sureshEmployee.location);
+
+    //it will create inside the current object
+    akashEmployee.location = 100;
+    console.log(akashEmployee);
+
+</script>

@@ -1,0 +1,32 @@
+<script>
+function Person(firstName,lastName) 
+{
+ this.firstName = firstName;
+ this.lastName = lastName;
+}
+
+function Employee(rollno) 
+{
+  this.rollno = rollno;
+  this.getDisplayEmployee = function(){
+    console.log(this.firstName);
+  }
+}
+
+Employee.prototype.getFullname = function()
+{
+    console.log("Full Name is "+this.firstName +' '+this.lastName);
+}
+
+// Person.prototype = Object.create(Employee.prototype);
+// Person.prototype.constructor = Person;
+// let akashPerson = new Person("akash","selvam");
+// akashPerson.getFullname();
+
+
+
+
+
+
+
+</script>

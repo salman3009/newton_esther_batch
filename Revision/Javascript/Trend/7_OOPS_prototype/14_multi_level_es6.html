@@ -1,0 +1,26 @@
+<script>
+    class Person {
+  constructor(name) {
+    this.name = name;
+  }
+}
+
+class Employee extends Person {
+  constructor(name, salary) {
+    super(name);
+    this.salary = salary;
+  }
+}
+
+class Manager extends Employee {
+  constructor(name, salary, department) {
+    super(name, salary);
+    this.department = department;
+  }
+}
+
+const myManager = new Manager('John', 50000, 'Marketing');
+console.log(myManager.name); 
+console.log(myManager.salary); 
+console.log(myManager.department); 
+</script>

@@ -1,0 +1,60 @@
+https://www.programiz.com/javascript/symbol
+
+
+<!-- <script>
+//The JavaScript ES6 introduced a new primitive data type called Symbol. Symbols are immutable (cannot be changed) and are unique. For example,
+// two symbols with the same description
+
+const value1 = Symbol('hello');
+const value2 = Symbol('hello');
+
+console.log(value1 === value2); // false
+</script> -->
+
+<!-- <script>
+// creating symbol
+const x = Symbol()
+
+typeof x; // symbol
+</script> -->
+
+
+<!-- <script>
+//To access the description of a symbol, we use the . operator. For example,
+const x = Symbol('hey');
+console.log(x.description); // hey
+</script> -->
+
+<!-- <script>
+//The for...in loop does not iterate over Symbolic properties. For example,
+
+let id = Symbol("id");
+
+let person = {
+    name: "Jack",
+    age: 25,
+    [id]: 12
+};
+
+// using for...in
+for (let key in person) {
+    console.log(key);
+}
+</script> -->
+
+
+<!-- <script>
+    //It will have unique keys
+    g_obj={};
+    const yourKey = Symbol("hiddenID");
+    const your_library=()=>{
+        g_obj[yourKey]="code_777"
+    }
+    const friendKey = Symbol("hiddenID");
+    const friend_library=()=>{
+        g_obj[friendKey]="code_777"
+    }
+    your_library();
+    friend_library();
+    console.log(g_obj);
+</script> -->

@@ -1,0 +1,17 @@
+<script>
+    class Foo{
+    #thisIsPrivate = 1; //static, and can't be called from outside the class declaration
+    thisIsPublic = 56;
+    publicMethod(){
+        return this.#thisIsPrivate;
+    }
+    #privateMethod(){
+        return this.#thisIsPrivate;
+    }
+}
+let obj = new Foo();
+console.log(obj.publicMethod());
+// console.log(obj.#thisIsPrivate);
+// console.log(obj.#privateMethod());
+console.log(obj.thisIsPublic);
+</script>

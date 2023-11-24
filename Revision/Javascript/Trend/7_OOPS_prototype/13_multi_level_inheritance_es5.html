@@ -1,0 +1,53 @@
+https://stackoverflow.com/questions/24046166/multi-level-inheritance-in-javascript
+Manager class object will access all method from Person and Employee. Multilevel Inheritance example
+<script>
+function Person(firstName,lastName,marks) 
+{
+ this.firstName = firstName;
+ this.lastName = lastName;
+ this.marks=marks;
+}
+
+ Person.prototype.getFullname = function()
+  {
+    console.log("Full Name is "+this.firstName +' '+this.lastName);
+  }
+
+
+function Employee(firstName,lastName, marks, rollno, salary) 
+{
+Person.call(this,firstName,lastName,marks);
+this.rollno = rollno;
+this.salary=salary;
+}
+
+Employee.prototype = Object.create(Person.prototype);
+// Employee.prototype.constructor = Employee;
+
+Employee.prototype.getSalary = function()
+  {
+    console.log(`Salary of ${this.firstName} ${this.lastName} is ${this.salary}`);
+  }
+
+function Manager(firstName,lastName, marks, rollno, salary, code) {
+
+ Employee.call(this, firstName,lastName,marks, rollno, salary);
+
+ this.code = code;
+}
+
+
+Manager.prototype = Object.create(Employee.prototype);
+// Manager.prototype.constructor = Manager;
+Manager.prototype.designation = function() {
+ console.log("You'r designation is Manager");
+}
+var m = new Manager("shankar","singh", 21,100, 40000,"CS12");
+
+console.log(m);
+m.getFullname();
+m.getSalary();
+m.designation();
+
+
+</script>

@@ -1,0 +1,17 @@
+Calling Object.create() creates a new object. The [[Prototype]] of this object is the first argument of the function:
+//Creating own Prototypical inheritance
+<script>
+    const a = { a: 1 };
+// a ---> Object.prototype ---> null
+console.log(a.__proto__);
+console.log(a.__proto__.__proto__);
+
+const b = Object.create(a);
+// b ---> a ---> Object.prototype ---> null
+console.log(b.a); // 1 (inherited)
+console.log(b.__proto__);
+console.log(b.__proto__.__proto__);
+console.log(b.__proto__.__proto__.__proto);
+
+</script>
+

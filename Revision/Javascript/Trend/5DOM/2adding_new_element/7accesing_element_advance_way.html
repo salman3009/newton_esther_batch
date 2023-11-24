@@ -1,0 +1,36 @@
+<div class="global">
+    <div class="product">
+        <img  width="250px" height="350px" src="#"
+            alt="firstImage">
+        <p class="ptitle">Car</p>
+        <div class="priceandaddtocart">
+            <p class="pprice">3000</p>
+            <button class="addtocart" productid="1">add to cart icon</button>
+        </div>
+    </div>
+    <div class="product">
+        <img  width="250px" height="350px" src="#"
+            alt="secondImage">
+        <p class="ptitle">Car</p>
+        <div class="priceandaddtocart">
+            <p class="pprice">3000</p>
+            <button class="addtocart" productid="2">add to cart icon</button>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    document.querySelectorAll(".addtocart").forEach((e) => {
+    e.onclick = (evt) => {
+        let id = evt.target.getAttribute("productid");
+        let price = evt.target.previousElementSibling.innerHTML;
+        let image =
+            evt.target.parentElement.previousElementSibling.previousElementSibling.getAttribute(
+                "src"
+            );
+        let title = evt.target.parentElement.previousElementSibling.innerHTML;
+        console.log(id);
+    };
+});
+</script>

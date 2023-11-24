@@ -1,0 +1,28 @@
+<script>
+    class Employee {
+        
+        #salary;
+        constructor(name, age) {
+            this.name = name;
+            this.age = age;
+        }
+
+        getDetails() {
+            return `name is ${this.name} and age is ${this.age}`;
+        }
+
+        set setSalaryDetails(input) {
+            this.#salary = input;
+        }
+
+        get getSalaryDetails() {
+            return this.#salary;
+        }
+    }
+
+    let akashEmployee = new Employee("akash", 45);
+    console.log(akashEmployee.getDetails());
+    akashEmployee.setSalaryDetails = 20000;
+    console.log(akashEmployee.getSalaryDetails);
+   // console.log(akashEmployee.#salary); private variable not accessible to outside
+</script>

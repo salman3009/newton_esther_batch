@@ -1,0 +1,26 @@
+<script>
+    const a = { a: 1 };
+    console.log(a.hasOwnProperty("a"));
+    console.log(Object.hasOwn(a, "a"));
+    
+    
+    const b = Object.create(a);
+    console.log(b.hasOwnProperty("a"));
+    console.log(Object.hasOwn(b, "a"));
+    </script>
+    
+    <script>
+      function Employee(name,age){
+        this.name = name;
+        this.age = age;
+      }
+      Employee.prototype.getSalaryDetails = function(){
+             console.log("salary details");
+      }
+      const akashEmployee = new Employee("akash",33);
+      console.log(Object.hasOwn(akashEmployee, "name"));
+    
+      console.log(Object.getPrototypeOf(akashEmployee).hasOwnProperty("getSalaryDetails")); // true
+    </script>
+    
+    

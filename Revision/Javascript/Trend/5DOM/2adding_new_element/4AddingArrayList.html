@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <style>
+
+            *{
+                box-sizing: border-box;
+            }
+            .container{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content:center;
+            }
+
+            .box{
+                padding-top:25px;
+                width: 200px;
+                margin:5px;
+                height:100px;
+                text-align: center;
+                border: 1px solid grey;
+                border-radius: 5px;
+            }
+
+    
+
+        </style>
+
+    </head>
+    <body>
+        <div id="contain" class="container">
+            
+        </div>
+        <script>
+            function display(){
+                var list =["india","usa","china","russia","france","germany","north korea","south korea","dubai","australia"];
+                var colorList =["orange","blue","green","red","yellow","violet","green","brown","grey","tomato"];
+                for(var i=0;i<list.length;i++){
+                    let child = document.createElement('div');
+                    //<div></div>
+                    child.innerText = list[i];
+                    //india
+                    child.appendChild(child);
+                    //<div>india</div>
+                    child.classList.add('box');
+                    child.style.backgroundColor = colorList[i];
+                    var parent = document.getElementById('contain');
+                    parent.appendChild(child);
+
+                }
+             
+            }
+
+            display();
+            
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,39 @@
+<script>
+    //First-Class Function: A programming language is said to have First-class functions if functions in that language are treated like other variables. So the functions can be assigned to any other variable or passed as an argument or can be returned by another function.
+//JavaScript treat function as a first-class-citizens. This means that functions are simply a value and are just another type of object.
+      const Arithmetics = {
+        add: (a, b) => {
+            return `${a} + ${b} = ${a + b}`;
+        },
+        subtract: (a, b) => {
+            return `${a} - ${b} = ${a - b}`
+        },
+        multiply: (a, b) => {
+            return `${a} * ${b} = ${a * b}`
+        },
+        division: (a, b) => {
+            if (b != 0) return `${a} / ${b} = ${a / b}`;
+            return `Cannot Divide by Zero!!!`;
+        }
+  
+    }
+  
+    document.write(Arithmetics.add(100, 100) + "<br>");
+    document.write(Arithmetics.subtract(100, 7) + "<br>");
+    document.write(Arithmetics.multiply(5, 5) + "<br>");
+    document.write(Arithmetics.division(100, 5));
+</script>
+
+<script>
+    //higher order function 
+    //A function that receives another function as an argument or that returns a new function or both is called Higher-order function. Higher-order functions are only possible because of the First-class function.
+    const greet =  function(name){
+    return function(m){
+    
+        console.log(`Hi!! ${name}, ${m}`);
+    }
+}
+  
+const greet_message = greet('ABC');
+greet_message("Welcome To GeeksForGeeks")
+</script>

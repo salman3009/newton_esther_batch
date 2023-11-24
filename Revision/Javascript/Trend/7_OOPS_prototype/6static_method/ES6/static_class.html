@@ -1,0 +1,21 @@
+<script>
+    class Person {
+   constructor(firstName, lastName) {
+      this.firstName = firstName;
+      this.lastName = lastName;
+   }
+
+   static isPerson(obj) {
+      return true;
+   }
+
+   getDisplay() {
+      return `Hi ${this.firstName}`;
+   }
+}
+
+let akashPerson = new Person("akash","ajay");
+console.log(akashPerson.getDisplay());
+
+console.log(Person.isPerson());
+</script>

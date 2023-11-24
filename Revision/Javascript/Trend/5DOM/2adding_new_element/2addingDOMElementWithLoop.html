@@ -1,0 +1,48 @@
+<html>
+
+<head>
+    <style>
+        .even {
+            color: red;
+        }
+
+        .odd {
+            color: green;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="demo">
+
+    </div>
+    <script>
+
+        function display() {
+            for (var i = 1; i <= 10; i++) {
+                let child = document.createElement('p');
+                child.innerText = "Welcome to programming";
+
+
+                if (i % 2 == 0) {
+                    parent.classList.add('even');
+                }
+                else {
+                    parent.classList.add('odd');
+                }
+
+                //merge the tag and content together
+                var parent = document.getElementById("demo");
+                parent.appendChild(child);
+                //merge the newly created tag inside the demo id div
+            }
+        }
+        display();
+
+
+
+    </script>
+</body>
+
+</html>

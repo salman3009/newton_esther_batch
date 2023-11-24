@@ -1,0 +1,14 @@
+<script>
+    class Employee {
+      constructor(name,age) {
+        this.name = name;
+        this.age = age;
+      }
+      getDetails(){
+        return `name is ${this.name} and age is ${this.age}`;
+      }
+    }
+
+    let akashEmployee = new Employee("akash",45);
+    console.log(akashEmployee.getDetails());
+  </script>
