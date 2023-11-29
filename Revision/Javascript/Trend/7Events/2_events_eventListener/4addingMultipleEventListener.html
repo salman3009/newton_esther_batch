@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <style>
+            #demo{
+                width: 300px;
+                height:200px;
+                border:2px solid black;
+            }
+        </style>
+
+    </head>
+    <body>
+        <div id="demo">
+
+        </div>
+        <script>
+            var list = document.getElementById("demo");
+            list.addEventListener('mouseover',mouseOverHandler);
+            list.addEventListener('mouseout',mouseOutHandler);
+            
+            function mouseOverHandler(event){
+                list.style.backgroundColor = "red";
+            }
+            function mouseOutHandler(event){
+                list.style.backgroundColor = "green";
+            }
+            
+        </script>
+    </body>
+</html>

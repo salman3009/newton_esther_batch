@@ -1,0 +1,9 @@
+Data structure:
+1.Array - order important - key is constant
+2.Object - no order - key is constant - unique - you need to give key
+=============================================
+
+
+
+
+

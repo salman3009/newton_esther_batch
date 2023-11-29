@@ -1,0 +1,15 @@
+<script>
+    function addition(a,b,result){
+        let finalInput = a+b;
+        result(finalInput);
+    }
+ 
+    addition(33,22,function(result){
+        console.log("callback function",result);
+    });
+
+</script>
+
+
+
+

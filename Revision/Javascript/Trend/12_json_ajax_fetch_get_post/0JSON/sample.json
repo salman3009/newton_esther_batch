@@ -1,0 +1,22 @@
+[
+    {
+      "No": 1,
+      "Team": "Gujarat Titans",
+      "Matches": 14,
+      "Won": 10,
+      "Lost": 4,
+      "Tied": 0,
+      "NRR": 0.316,
+      "Points": 20
+    },
+    {
+      "No": 2,
+      "Team": "Rajasthan Royals",
+      "Matches": 14,
+      "Won": 9,
+      "Lost": 5,
+      "Tied": 0,
+      "NRR": 0.298,
+      "Points": 18
+    }
+  ]

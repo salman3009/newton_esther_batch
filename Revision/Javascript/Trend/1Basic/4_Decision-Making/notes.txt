@@ -1,0 +1,5 @@
+Decision Making 
+1.if-else - else if ladder  
+2.switch
+false condition - '',0,null,NaN,undefined,false
+==================================================

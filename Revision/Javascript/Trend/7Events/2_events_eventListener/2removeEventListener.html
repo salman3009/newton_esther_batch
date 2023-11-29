@@ -1,0 +1,26 @@
+<html>
+
+<head>
+</head>
+
+<body>
+    <p id="red">
+        Indian Bank is a major nationalised bank. It is under the ownership of the Ministry of Finance, Government of
+        India. It was established in 1907 and is headquartered in Chennai, India. Wikipedia
+    </p>
+    <button onclick="onRemoveHandler()">Remove</button>
+</body>
+<script>
+    document.getElementById("red").addEventListener("click",onClickHandler);
+
+    function onClickHandler(event){
+        var list = document.getElementById(event.target.id);
+        list.style.backgroundColor = event.target.id;
+    }
+
+    function onRemoveHandler(){
+        document.getElementById("red").removeEventListener("click",onClickHandler);
+    }
+</script>
+
+</html>

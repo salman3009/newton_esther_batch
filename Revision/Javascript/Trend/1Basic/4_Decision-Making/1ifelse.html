@@ -1,0 +1,34 @@
+<script>
+    var amount = 500;
+    var coupon = true;
+    if(coupon && amount >=500){
+        console.log("if block executed");
+    }
+    else{
+        console.log("else if block executed");
+    }
+</script>
+
+<script>
+    //below are false value
+    if(''){
+        alert("empty string");
+    }
+    if(0){
+        alert("zero");
+    }
+    if(undefined){
+        alert("undefined");
+    }
+    if(false){
+        alert("false");
+    }
+    if(NaN){
+        alert("not a number");
+    }
+    if(3*"rajesh"){
+        alert("not execute");
+    }
+    var result = 3 * "salman";
+    console.log(result);
+</script>

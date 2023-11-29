@@ -1,0 +1,28 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <input type="text" onkeyup="processChange(event)"/>
+    </body>
+</html>
+<script>
+    //Debouncing will bunch a series of sequential calls to a function into a single call to that function.
+    //It ensures that one notification is made for an event that fires multiples times.
+    
+    function debounce(func,delay = 300){
+        let debounceTimer 
+        return function(){
+            const context = this
+            const args = arguments 
+                clearTimeout(debounceTimer) 
+                    debounceTimer 
+                = setTimeout(() => func.apply(context, args), delay) 
+        }
+    }
+
+    function saveInput(event){
+        console.log(event.target.value);
+    }
+    const processChange = debounce((event)=>saveInput(event));
+</script>

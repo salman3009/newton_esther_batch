@@ -1,0 +1,23 @@
+String:
+//JavaScript strings are for storing and manipulating text.
+//A JavaScript string is zero or more characters written inside quotes.
+example:
+let text = "John Doe";
+String methods:
+1.length 
+2.toLowerCase()
+3.loUpperCase()
+4.replace() - replacing the string with another new words
+5.concat() - combination
+6.trim() - removing white space
+7.chartAt() - it will return character if we pass index
+8.indexOf() - it will return index if we pass character
+9.slice()/substring() - It will break the string into smaller portion
+===================================
+Similar methods in array from strings 
+1.length 
+2.indexOf()
+3.slice()
+3.concat()
+4.includes()
+=====================================

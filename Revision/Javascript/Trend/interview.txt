@@ -1,7 +1,7 @@
 What is javascript?
 1.It is dynamic language in web browser 
 2.It will work as combination with html,css 
-3.All browser as compiler present in it 
+3.All browser as javascript compiler inbuilt present in it 
 4.If you want to run javascript outside the browser you need to have nodejs
 5.client side scripting 
 6.interpreted language (line by line execution)
@@ -34,8 +34,11 @@ Primitive Types:
 2.number 
 3.boolean 
 4.undefined
+5.null
+6.symbols --> unique identifier
 Non - Primitive Types:
-1.Object --->Object,Array,Null
+1.Object
+2.Array
 =============================================
 Javascript has dynamic typing
 example:
@@ -65,24 +68,6 @@ String cancatenation
 //By using + symbol two string will combine together 
 let result = "car" + "tata"
 //car tata 
-====================================
-Logical operator:
-    var a = 'hello' || '';             // a = 'hello'
-var b = '' || [];                  // b = []
-var c = '' || undefined;           // c = undefined
-var d = 1 || 5;                    // d = 1
-var e = 0 || {};                   // e = {}
-var f = 0 || '' || 5;              // f = 5
-var g = '' || 'yay' || 'boo';      // g = 'yay'
-
-
-var a = 'hello' && '';                  // a = ''
-var b = '' && [];                       // b = ''
-var c = undefined && 0;                 // c = undefined
-var d = 1 && 5;                         // d = 5
-var e = 0 && {};                        // e = 0
-var f = 'hi' && [] && 'done';           // f = 'done'
-var g = 'bye' && undefined && 'adios';  // g = undefined
 ======================================================
 Typescasting are two ways
 //converting from one datatype to another datatype  

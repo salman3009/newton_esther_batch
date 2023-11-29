@@ -1,0 +1,18 @@
+<script>
+    //First class function
+    var variableName = function display() {
+        console.log("function named expression");
+    }; 
+</script>
+
+<script>
+    //higher order function 
+    const greet = function (name) {
+        return function (m) {
+            console.log(`Hi!! ${name}, ${m}`);
+        }
+    }
+
+    const greet_message = greet('ABC');
+    greet_message("Welcome To display")
+</script>

@@ -1,26 +1,30 @@
-NOtes:
-any string can be represented by using 
-"" or '' 
-all comparison operator is going to return boolean value.
-Total:6
-0 1 2 3 4 5 
-Total 6
-1 2 3 4 5 6 
-Comparison:
-1.==      //it is comparing only value
-2.===      //it comparing value + datatype
-3.>
-4.>=
-5.<
-6.<= 
-7.!= (similar to == but opposite condition)
-8.!== (similar to === but opposite condition)
-===============================
-anything if you add with string it will become string.
-Because string is given more priority with other datatype.
-================================================
-
-
-
-
-
+Types of operator?
+1.Arithmetic operator 
+      //+,-,*,/,++,--
+2.comparison operator 
+      //!==,!=,<,>,<=,>-,==,===
+3.Logical operator 
+       //&&,||,!
+4.conditional operator 
+       condition?yes:no 
+=======================================
+Difference between == and === operator?
+//== It will check only value 
+//=== It will check value + datatype 
+'3' == 3 - true 
+'3' === 3 - false 
+=====================================
+String cancatenation 
+//By using + symbol two string will combine together 
+let result = "car" + "tata"
+//car tata 
+======================================================
+Typescasting are two ways
+//converting from one datatype to another datatype  
+1.implicit 
+   45 + hello = string type = 45hello 
+2.explicit 
+    Number("33")
+    String()
+    Boolean()
+================================================    

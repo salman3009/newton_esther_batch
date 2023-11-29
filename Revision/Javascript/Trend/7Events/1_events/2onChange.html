@@ -1,0 +1,32 @@
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <form>
+        FullName:<input type="text" name="fullName" onchange="onChangeHandler(event)" />
+    </form>
+    <table>
+        <tr>
+            <td>
+                FullName
+            </td>
+            <td id="full">
+
+            </td>
+        </tr>
+    </table>
+    <script>
+        function onChangeHandler(event) {
+            console.log(event);
+            console.log(event.target.name);
+            console.log(event.target.value);
+            var list = document.getElementById("full");
+            list.innerHTML = event.target.value;
+        }
+    </script>
+</body>
+
+</html>
