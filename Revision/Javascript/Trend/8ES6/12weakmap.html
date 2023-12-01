@@ -1,0 +1,23 @@
+<script>
+
+    // WeakMap is a new Data Structure or Collection introduced in ES6. WeakMaps allows you to store a collection of Key-Value pairs. It adopts the same properties of Map. The Major difference is that keys of WeakMap cannot be a primitive data type. The keys must be of type object and values can be of any data type. 
+
+    // Creating a WeakMap Object
+    const m = new WeakMap();
+
+    // Adding elements in it
+    // Remember, only object can
+    // be a key in WeakMap
+    obj1 = {}
+    m.set(obj1, "Object 1");
+    obj2 = {}
+    m.set(obj2, "Object 2");
+
+    // Use delete() function
+    m.delete(obj2);
+
+    // Print the WeakMap
+    console.log(m);
+</script>
+
+

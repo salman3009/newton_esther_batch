@@ -33,17 +33,14 @@
         })
     }
 
-  
 
-    googlePayDetails(400).then((result)=>{
+    googlePayDetails(-400).then((result)=>{
           console.log(result);
           return successPage(true);
-    },(failure)=>{
-        console.log(failure);
     }).then((result2)=>{
              console.log(result2);
-    },(failure2)=>{
-             console.log(failure2);
+    }).catch((failure)=>{
+        console.log(failure);
     })
 
 

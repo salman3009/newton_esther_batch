@@ -1,0 +1,32 @@
+<!-- 
+<script>
+    let employee={
+        age:33,
+        display:function(){
+            console.log(this);
+            function getAge(){
+                //it will have own this keyword - window object
+                console.log(this);
+            }
+            getAge();
+        }
+    }
+    employee.display();
+</script> -->
+
+
+
+<script>
+    let employee={
+        age:33,
+        display:function(){
+            console.log(this);
+            const getAge = ()=>{
+                //it don't have own this keyword. it will from parent
+                console.log(this);
+            }
+            getAge();
+        }
+    }
+    employee.display();
+</script>

@@ -1,51 +1,49 @@
-Javascript:
-1.javascript default behaviour it will work in synchronous way 
-2.javascript also supports asynchornous code.
-3.Async means any waiting period is there in that particular code  the other  program will not wait for that code to be executed.
-4.javascript is non-blocking operation.
-5.async code - setTimeout,setInterval.
-============================================
-Promise:
-1.it will work in Async way 
-2.It consists of two paramets 
-               1.success 
-			   2.failure 
-3.any function that is going to return promise we need to use then block to access success or failure data.
-4.whenever we have api call or some code is dependent on async code.
-=====================================
-new Promise(()=>{
-})
-
-new Promise((success,failure)=>{
-
-})
-
-function display(){
-new Promise((success,failure)=>{
-             success("success");
-});
-
-
-display().then()
-
-display().then(()=>{},()=>{})
-
-display().then((a)=>{console.log(a)},(failure)=>{
-console.log(failure);
-})
-}
-=============================================
+What is synchronous code in javascript?
+//The JavaScript engine executes our program sequentially, one line at a time from top to bottom in the exact order of the statements.
+What is asychronous code in javascript?
+//computer program to handle multiple tasks simultaneously rather than executing them one after the other.
+//This approach can greatly improve the performance and responsiveness of a program.
+//example: while a program retrieves data from a remote server, it can continue to execute other tasks such as responding to user inputs
+1.setTimeout 
+2.setInterval
+3.callback with asychronous operation 
+4.promise 
+5.fetch 
+6.async await 
+=======================================================
+setTimeout:
+//It allows you to run a function after a certain amount of time has passed.
+setInterval:
+The setInterval() method calls a function at specified intervals (in milliseconds). The setInterval() method continues calling the function until clearInterval() is called.
+=======================================================
+callback:
+//Afunction that's passed into another function, with the expectation that the callback will be called at the suitable time.
+callback hell:
+//when you chain multiple callbacks together, one after the other called callback hell.
+============================================================
+promise:
+//A Promise is an object that will produce a single value some time in the future.
+//If the promise is successful, it will produce a resolved value, but if something goes wrong then it will produce a reason why the promise failed.
+//JavaScript promises can be in one of three possible states.
+    1.pending: This is the default state of a defined promise
+    2.fulfilled:  This is the state of a successful promise
+    3.rejected: This is the state of a failed promise
 Promise chain:
-scan--->our bank to check balance -->there bank is connected--->transfer -->success-->home
-============================================
-1.normal promise  - es6
- 2.chain  - es6
-3.promise.all - es6
-4.async and await - es7 (because of promise chain)
-===================================
-
-
-
-
-
-
+//To handle more than one asynchronous task, one after another
+//You can chain multiple then() methods with the promise.
+Promise All:
+//Takes an array of promises(an iterable) as input. It returns a single Promise that resolves when all of the promises passed as an iterable.
+========================================================================
+Difference between callback and promise:
+callback:
+//The syntax is difficult to understand.
+//Error handling may be hard to manage.
+promise:
+//The syntax is user-friendly and easy to read because of then and catch.
+//Error handling is easier to manage using catch block.
+=========================================================
+Async/await 
+//That allows you to write asynchronous code in a more synchronous, readable way.
+//async is a keyword that is used to declare a function as asynchronous.
+//await is a keyword that is used inside an async function to pause the execution of the function until a promise is resolved.
+===========================================================

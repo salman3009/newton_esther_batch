@@ -37,7 +37,7 @@
 
    Promise.all([googlePayDetails(6),successPage(true)]).then((success)=>{
             console.log(success);
-   },(error)=>{
+   }).catch((error)=>{
        console.log(error);
    })
 

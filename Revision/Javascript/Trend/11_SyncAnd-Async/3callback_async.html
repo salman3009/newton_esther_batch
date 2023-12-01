@@ -1,0 +1,12 @@
+<script>
+    function addition(a,b,callback){
+        let result = a + b;
+        setTimeout(function(){
+            callback(result);
+        },3000)
+    }
+
+    addition(33,44,function(input){
+        console.log(input);
+    })
+</script>

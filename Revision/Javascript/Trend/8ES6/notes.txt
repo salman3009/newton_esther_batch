@@ -1,0 +1,58 @@
+var vs let vs const 
+var:
+//The scope of a var variable is functional scope.
+//It can be updated and re-declared into the scope
+let:
+//It can be updated and re-declared into the scope
+//It can be updated but cannot be re-declared into the scope.
+const:
+//The scope of a const variable is block scope.
+//It cannot be updated or re-declared into the scope.
+==========================================================
+Object freeze:
+//Freezing an object does not allow new properties to be added to the object and prevents removing or altering the existing properties.
+==========================================================
+Scope of variable:
+
+JavaScript has 3 types of scope:
+Block scope
+//Variables declared inside a { } block cannot be accessed from outside the block:
+Function scope
+//Variables defined inside a function are not accessible (visible) from outside the function.
+Global scope
+//A variable declared outside a function, becomes GLOBAL
+=========================================================
+Template string:
+//Template literals allow variables in strings
+//Template literals allow expressions in strings:
+======================================================
+Arrow function:
+//Arrow functions allow us to write shorter function syntax:
+//with arrow functions there are no binding of this.
+//Arrow function inherit the value of “this” from the enclosing scope
+//In regular functions the this keyword represented the object that called the function, which could be the window, the document, a button or whatever.
+====================================================================================
+Spread operator:
+//The spread operator helps us expand an iterable such as an array where multiple arguments are needed.
+Rest operator:
+//The rest parameter is converse to the spread operator.
+//while the spread operator expands elements of an iterable, the rest operator compresses them.
+==========================================================================
+Destructing:
+//Destructuring is a JavaScript expression that allows to unpack values from arrays, or properties from objects, into distinct variables.
+=======================================================
+Map:
+//JavaScript map is a collection of elements where each element is stored as a Key, value pair. 
+//Map objects can hold both objects and primitive values as either key or value.
+//When we iterate over the map object it returns the key, and value pair in the same order as inserted.
+WeakMap:
+//It adopts the same properties of Map.
+//keys of WeakMap cannot be a primitive data type
+//The keys must be of type object and values can be of any data type.
+=================================================================
+Symbols:
+//new primitive data type called Symbol
+//Symbols are immutable (cannot be changed) and are unique
+Symbols are private:
+//Symbols can be used to create private properties or methods in objects inaccessible from outside the object.
+=======================================================

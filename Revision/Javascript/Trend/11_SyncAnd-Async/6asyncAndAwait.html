@@ -36,7 +36,7 @@
      async function display(){
          let result = "44";
          console.log(result);
-         let promise1 = await googlePayDetails(600);
+         let promise1 = await googlePayDetails(-600);
          console.log(promise1);
          let promise2 =  await successPage(true);
          console.log(promise2);
@@ -45,13 +45,9 @@
 
      display().then((final)=>{
            console.log(final);
+     }).catch((error)=>{
+          console.log(error);
      })
 
-     function one(){
-         console.log("one");
-     }
-
-     one();
-
-
+    
 </script>

@@ -1,21 +1,18 @@
 <script>
-
     {
         let fullName = "akash";
         console.log(fullName);
-        console.log(window.fullName);
-      //  let fullName = "suresh";
-      fullName = "suresh";
     }
 
+    //you cannot access let outside here
     // console.log(fullName);
 
     {
         const PI = 3.14;
         console.log(PI);
-        console.log(window.PI);
-      //  const PI = 22;
-     // PI = 444;
+        //you cannot reassign here
+       // PI = 56
     }
+    //const is block scope you cannot access here
     //console.log(PI);
 </script>

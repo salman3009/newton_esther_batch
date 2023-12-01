@@ -1,0 +1,31 @@
+<script>
+    //spread parameter will spread the value from array to individual value
+    let list =[1,2,3,4];
+    let input = [5,6,7,8];
+    let result = [...list,...input];
+    console.log(result);
+</script>
+
+
+<script>
+    function addition(a,b,c){
+        console.log(a,b,c);
+    }
+   // addition([1,2,3]);
+    addition(...[1,2,3]);
+</script>
+
+
+<script>
+  
+    let employee={
+        fullName:"akash",
+        age:33
+    };
+    let token={
+        amount:500,
+        date:'22/44/2022'
+    };
+    let employeeGlobal ={...employee,...token};
+    console.log(employeeGlobal);
+</script>

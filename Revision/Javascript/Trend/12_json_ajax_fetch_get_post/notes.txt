@@ -1,0 +1,82 @@
+Ajax:
+//AJAX = Asynchronous JavaScript And XML.
+//AJAX is not a programming language.
+
+//AJAX just uses a combination of:
+//A browser built-in XMLHttpRequest object (to request data from a web server)
+//JavaScript and HTML DOM (to display or use the data)
+
+//AJAX allows web pages to be updated asynchronously by exchanging data with a web server behind the scenes.
+// This means that it is possible to update parts of a web page, without reloading the whole page.
+===============================================================================
+HTTP - HYPER TEXT TRANSFER PROTOCOL
+//HTTP is an application layer protocol designed to transfer information between networked
+Method:
+1.GET
+2.POST
+3.PATCH
+4.DELETE
+
+1.GET METHOD - Bringing existing data
+//Any request that we are hitting in browser is default get method.
+//Get method will bring html,css,javascript and also json file.
+
+2.POST Method - Sending new data from frontend to backend
+
+3.PATCH Method - update the data.
+
+4.DELETE Method - It is used to delete the data.
+
+=========================================================
+API 
+API - Application Programming Interface
+//It iss a set of commands, functions, or protocols that act as an intermediary that enables two applications to communicate.
+REST API:
+//REST stands for Representational State Transfer.
+//Rest is an architectural style for creating websites using the HTTP protocol.
+//When a client requests a resource via the restful API, the server sends a Representation(data) of that resource.
+//These representations are transferred via HTTP through various formats, including  JSON (Javascript Object Notation), HTML,XML or plain text. The most popular file format is JSON because it can be read both by humans and machines.
+==============================================================
+Fetch:
+//It is similar to Ajax
+//The fetch() method starts the process of fetching a resource from a server.
+//The fetch() method returns a Promise that resolves to a Response object
+==========================================================
+Axios:
+//Axios is a Javascript library used to make HTTP requests
+//It supports the Promise API that is native to JS ES6
+//It also has the ability to cancel requests
+//Axios provides better support for handling errors and setting headers
+=====================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

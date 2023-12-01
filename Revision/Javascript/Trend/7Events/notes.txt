@@ -1,0 +1,33 @@
+Events:
+//events which represents that some activity is performed by the user.
+//javascript react over these events and allow the execution. This process of reacting over the events is called Event Handling
+1.onclick
+//When mouse click on an element
+2.onmouseover
+//When the cursor of the mouse comes over the element
+3.onmouseout
+//When the cursor of the mouse leaves an element
+4.onsubmit
+//When the user submits the form
+5.onchange
+//When the user modifies or changes the value of a form element
+6.onkeyup
+//When the user press and then release the key
+7.onload
+//When the browser finishes the loading of the page
+======================================================
+Event Listener:
+//The addEventListener() is an inbuilt function in JavaScript which takes the event to listen for, and a second argument to be called whenever the described event gets fired.
+//Any number of event handlers can be added to a single element.
+// removeEventListener() is an inbuilt function that is used to remove removes an event handler that was previously added using the addEventListener() function from the element.
+===========================================================
+Event Bubbling:
+//The concept of event bubbling comes into the picture. The child div lies inside the parent div as well as in the grandparent div. 
+//So, when the child div clicked, we indirectly clicked on both parent div and grandparent div. 
+//Thus, propagation is moving from inside to outside in the DOM or we can say events are getting bubble up. 
+Event Capturing:
+// the process of propagating from the outer element to the closest element in the DOM is called event capturing
+//First event capturing will happen then event bubble will happen.
+How to stop event bubbling and event capturing?
+//stopPropagation() which helps to prevent this annoying behavior.
+===========================================================

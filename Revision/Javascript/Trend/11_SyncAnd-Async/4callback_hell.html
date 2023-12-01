@@ -1,0 +1,23 @@
+<script>
+    //async callback is dependent with another callback async 
+    function addition(a,b,room){
+        let result = a + b;
+        setTimeout(function(){
+            room(result);
+        },3000)
+    }
+
+    function subtraction(additionValue,b,callback){
+       let result = additionValue - b;
+       setTimeout(function(){
+            callback(result);
+        },1000)
+    }
+
+    addition(33,44,function(addResult){
+        console.log("addition result",addResult);
+           subtraction(addResult,40,function(subResult){
+                 console.log("subtraction result",subResult);
+           })
+    })
+</script>
