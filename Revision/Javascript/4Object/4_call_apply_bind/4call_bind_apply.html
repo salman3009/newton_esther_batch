@@ -1,0 +1,22 @@
+<script>
+
+    function getFullNameDisplay(firstName, lastName) {
+        console.log(this, firstName, lastName);
+    }
+
+    let foodEmployee = {
+        fullName: "suresh kumar",
+        address: "bangalore"
+    }
+
+    function display(){
+        getFullNameDisplay.call(foodEmployee, "suresh", "kumar")
+        getFullNameDisplay.apply(foodEmployee, ["suresh", "kumar"])
+        let result = getFullNameDisplay.bind(foodEmployee, "suresh", "kumar");
+        result();
+    }
+    display();
+   
+
+
+</script>

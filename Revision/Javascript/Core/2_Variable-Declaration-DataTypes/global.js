@@ -1,1 +1,0 @@
-alert("global hello world");

@@ -1,0 +1,6 @@
+Points:
+1.New technologies older browsers may not immediately support them.
+2.A polyfill provides the functions and features that the developer expects the browser to offer by default.
+3.If we use ES6 or ES7 or ES8 features in our code, it might not work in some older browsers due to a lack of support for the new features
+4.A polyfill is a piece of code that adds functionality to older browsers that have incompatibility issues.
+

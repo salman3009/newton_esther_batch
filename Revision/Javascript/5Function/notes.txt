@@ -1,0 +1,150 @@
+What is function?
+//We can write resuable code in particular block so that we can reuse it later 
+//We can call multiple times same function with different parameters 
+//Function make code maintainability and it will increase the performance.
+//return keyword will return the result of that function 
+//To get dynamic inputs we can pass inside the parameters.
+==========================================================
+Default function 
+Default function parameters allow named parameters to be initialized with default values if no value or undefined is passed.
+example:
+function multiply(a, b = 1) {
+  return a * b;
+}
+console.log(multiply(5));
+==========================================================
+Anonymous function or IIFE (Immediately Invoked Function Expressions)
+It is a function that does not have any name associated with it.
+example:
+(function() {
+    console.log('IIFE');
+})();
+================================================================
+Function Declaration:
+The function declaration must have a function name.
+The function in function declaration can be accessed before and after the function definition.
+example:
+function display(paramA, paramB) {
+    // Set of statements
+}
+Function Expression 
+A function Expression is similar to a function declaration without the function name.
+The function in function expression can be accessed only after the function definition.  
+example:
+var display= function(paramA, paramB) {
+    // Set of statements
+}
+=========================================================
+function named expression 
+Function Expression which has a name or identifier is called Named Function Expression.
+example:
+ var variableName = function display(){
+     console.log("function named expression");
+   };
+====================================================
+Function Closure:
+JavaScript closure is a feature that allows inner functions to access the outer scope of a function   
+example;
+function global(){
+    let a = 4;
+    return function(b){
+        console.log(a,b);
+    }
+}
+=========================================================
+//First-Class Function: 
+A programming language is said to have First-class functions if functions in that language are treated like other variables. 
+var variableName = function display(){
+     console.log("function named expression");
+}; 
+===================================================
+//Higher Order Function or HOC 
+//A function that receives another function as an argument or that returns a new function or both is called Higher-order function.
+example:
+   const greet = function (name) {
+        return function (m) {
+            console.log(`Hi!! ${name}, ${m}`);
+        }
+    }
+    const greet_message = greet('ABC');
+    greet_message("Welcome To display")
+======================================================    
+function by value
+//the original variable is not modified on changes in other variables.
+example;
+    let age = 44;
+    function display(age){
+        age = 56;
+    }
+    display(age);
+
+function by reference
+//The original variable gets modified on changes in other variables.
+//array/object
+example:
+    let employee={
+        fullName:"akash",
+        age:33
+    }
+    function displayDetails(employee){
+        employee.age = 56;
+    }
+    displayDetails(employee);
+=============================================================
+function callback:
+A callback is a function passed as an argument to another function.
+example:
+function addition(a,b,result){
+        let finalInput = a+b;
+        result(finalInput);
+    }
+ 
+    addition(33,22,function(result){
+        console.log("callback function",result);
+    });
+=======================================================        
+function recursion 
+A function is recursive if it calls itself and reaches a stop condition.
+example:
+function display(num){
+     if(num<0){
+        return 1;
+     }
+     else{
+        num--;
+        display(num);
+     }
+}
+=========================================
+constructor function 
+a constructor function is used to create objects
+
+example:
+ function Employee(name,age){
+        this.name = name;
+        this.age = age;
+    }
+    let akashEmployee = new Employee("akash",45);
+==================================================
+factory function 
+The Factory Function is similar to constructor functions but instead of using new to create an object, factory functions simply creates an object and returns it. 
+//Note:see code 13 for example
+=================================================  
+Deboucing:
+//Debouncing will bunch a series of sequential calls to a function into a single call to that function.
+//It ensures that one notification is made for an event that fires multiples times. 
+//Note:see code 15 for example
+===================================================
+Throttling:
+//Throttling will delay executing a function. It will reduce the notification of an event that fires multiple times.
+//It will callet at regular intervals
+//Note:see code 16 for example 
+=====================================================
+Function Hositing:
+Hoisting is a concept that enables us to extract values of variables and functions even before initializing/assigning value without getting errors and this happens during the 1st phase (memory creation phase) of the Execution Context.
+example:
+display();
+function display(){
+    console.log("hositing);
+}
+==============================================
